@@ -1,0 +1,41 @@
+.user_header{
+    display: flex;
+}
+
+.user_header #token_no{
+    border:2px solid grey;
+    background-color: rgba(221, 216, 138, 0.801);
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.user_header a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(75, 74, 74, 0.87);
+}
+
+.user_header h4{
+    font-size: 17px;
+}
+
+.user_header a:hover{
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.row .userdetail{
+   padding-bottom: 5px;
+   padding-top: 10px;
+}
+
+button #emergency_request{
+    padding: 5px;
+}
+
+#reason, #doc{
+    font-size: 15px;
+}
+
+.cbcb {
+    background: #3f729b;
+  }
