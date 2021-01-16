@@ -29,24 +29,16 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 For example:
 
 ```
-git clone https://github.com/Harshita248/Scrum-Management.git
+git clone https://github.com/chehak123/GirlMeetup.git
 ```
 
 ## How to run ? 🛴
 
 After cloning the repo, run `npm install` in the terminal. <br>
 Install dependencies <br>
-` npm install express --save`<br>
-`npm i ejs`<br>
-`npm i ejs-html`<br>
-`npm i mongoose`<br>
-`npm i fs`<br>
 Then move on and run `node app.js`,<br>
 This will start the project automatically on `localhost:3000` .<br>
 Now you can move further to create the branch and start contributing !!
-
-![Main-Page-View](https://github.com/Harshita248/Scrum-Management/blob/master/Scrum_ss.png)
-
 
 ## Create a branch ⚓
 
