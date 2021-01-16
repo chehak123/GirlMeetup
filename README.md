@@ -1,15 +1,15 @@
-#GirlMeetup 👩
+# GirlMeetup 👩
 
-##About
-<p> This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility. </p>
+## About
+This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
-###How to start ? 🎪
-<p>If you don't have git on your machine, install it.</p>
+### How to start ? 🎪
+If you don't have git on your machine, install it.
 
-###Fork this repository 🚀
+### Fork this repository 🚀
 Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
 
-###Clone the repository 🏁
+### Clone the repository 🏁
 Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
 
 Open a terminal and run the following git command:
@@ -21,7 +21,7 @@ For example:
 
 git clone https://github.com/chehak123/GirlMeetup.git
 
-###Create a branch ⚓
+### Create a branch ⚓
 
 Change to the repository directory on your computer (if you are not already there):
 
@@ -33,7 +33,7 @@ For example:
 
 git checkout -b dev_username
 
-###Make necessary changes and commit those changes 🚏
+### Make necessary changes and commit those changes 🚏
 
 Do the necessary changes.
 
@@ -48,14 +48,14 @@ git commit -m "(Add your message here)"
 replacing <Add your message here> with your message.
   </p>
 
-###Push changes to GitHub 🪂
+### Push changes to GitHub 🪂
 
 Push your changes using the command git push:
 
 git push origin <branch-name>
 replacing <branch-name> with the name of the branch you created earlier.
 
-###Submit your changes for review 🚩
+### Submit your changes for review 🚩
 If you go to your repository on GitHub, you'll see a Compare & pull request button. Click on that button.
 
 Now submit the pull request.
