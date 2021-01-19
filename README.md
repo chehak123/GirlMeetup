@@ -3,6 +3,11 @@
 ## About
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
+## Tech Stack
+FRONTEND - HTML, CSS, Bootstrap
+BACKEND - Node.js, Express.js, EJS
+DATABASE - mongoDB
+
 ## How to start ? 🎪
 
 
