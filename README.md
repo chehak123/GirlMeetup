@@ -5,7 +5,9 @@ This is a web development project with a vision to create a platform for people 
 
 ## Tech Stack
 FRONTEND - HTML, CSS, Bootstrap
+
 BACKEND - Node.js, Express.js, EJS
+
 DATABASE - mongoDB
 
 ## How to start ? 🎪
