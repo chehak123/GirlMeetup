@@ -121,4 +121,4 @@ SPOILER ALERT: Be ready to have your mind blown...😜😏
 
 ## 👨 Project Admin
 
--  Chehak Agarwal (https://github.com/chehak123)
+-  [Chehak Agarwal] (https://github.com/chehak123)
