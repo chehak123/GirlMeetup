@@ -11,7 +11,7 @@ Below you will find the process and workflow used to review and merge your chang
 - If you want to add or change a major feature, create an issue and discuss with the maintainer what you would like to change.
 - If you want to work on an Existing Issues or an Issue that you created, check if anyone is working on that issue.
 - If no one is working on the issue, just comment and start working on it otherwise wait for the Issue to be assigned to you.
-![IssuesDemo](publiv/image/issues.jpg)
+![IssuesDemo](public/image/issues.jpg)
 
 ## Step 1 : Fork the Project  
 - Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.  
