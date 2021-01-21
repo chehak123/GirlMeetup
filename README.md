@@ -4,11 +4,12 @@
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
 ## Tech Stack
-FRONTEND - HTML, CSS, Bootstrap
 
-BACKEND - Node.js, Express.js, EJS
+- Front end : HTML, CSS, Bootstrap
 
-DATABASE - mongoDB
+- Back end : Node.js, Express.js, EJS
+
+- Data base : mongoDB
 
 ## How to start ? 🎪
 
@@ -104,3 +105,20 @@ If you go to your repository on GitHub, you'll see a `Compare & pull request` bu
 Now submit the pull request.
 
 Soon we will be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
+
+## Guide to using the Web Application
+
+
+Now comes the most exciting part of the project. Understanding and making use of the actual Web Application. So let's get started. 🥳 👽
+
+1. Start off by visiting the hosted application. 👻
+
+2. Open the application on your personal browser and you should have it ready to use.
+
+3. As every typical Web Application, we made sure you get the most exciting User Experience working on the application ......🧓
+
+SPOILER ALERT: Be ready to have your mind blown...😜😏
+
+## 👨 Project Admin
+
+-  Chehak Agarwal (https://github.com/chehak123)
