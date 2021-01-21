@@ -13,7 +13,7 @@ This is a web development project with a vision to create a platform for people 
 
 ## How to start ? 🎪
 
-<p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
+<p align= "center"><img width=55% src="https://media.giphy.com/media/JqzadBtonJVr0u8LUg/giphy.gif"></p>
 <br>
 
 #### If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
@@ -124,3 +124,5 @@ SPOILER ALERT: Be ready to have your mind blown...😜😏
 ## 👨 Project Admin
 
 -  Chehak Agarwal (https://github.com/chehak123)
+
+## ❤️ Thanks
