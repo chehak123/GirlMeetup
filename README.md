@@ -1,6 +1,6 @@
-# GirlMeetup 👩
+# 👩 GirlMeetup 
 
-## About
+## 🤷 About 
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
 ## Tech Stack
@@ -108,6 +108,10 @@ Now submit the pull request.
 
 Soon we will be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
 
+## Congratulations 🥳
+
+Sit and relax, you've made your contribution to [GirlMeetup](https://github.com/chehak123/GirlMeetup) project
+
 ## Guide to using the Web Application
 
 
@@ -120,6 +124,8 @@ Now comes the most exciting part of the project. Understanding and making use of
 3. As every typical Web Application, we made sure you get the most exciting User Experience working on the application ......🧓
 
 SPOILER ALERT: Be ready to have your mind blown...😜😏
+
+
 
 ## 👨 Project Admin
 
