@@ -39,3 +39,27 @@ button #emergency_request{
 .cbcb {
     background: #3f729b;
   }
+
+  .navbar .nav-link {
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .navbar .nav-item.active {
+    border-left: #444 3px solid;
+  }
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+
+  #main-footer {
+    background: #000;
+    color: #fff;
+  }

@@ -2,12 +2,12 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
+  <!-- <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between"> -->
 
       <!-- <h1 class="logo">GirlMeetup</h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="/" class="logo"><img src="" alt="" class="img-fluid"></a>
+      <!-- <a href="/" class="logo"><img src="" alt="" class="img-fluid"></a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -18,10 +18,52 @@
           <li><a href="#faq" class="btn-get-quote"><b>FAQ</b></a></li>
           <li><a href="#team" class="btn-get-quote"><b>Team</b></a></li>
           <li><a href="/login" class="btn-get-quote"><b>Login</b></a></li>
+        </ul> -->
+      <!-- </nav>-- .nav-menu -->
+    <!-- </div> --> 
+  <!-- </header>End Header -->
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="#" class="navbar-brand">GirlMeetup </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="#hero" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#slot" class="nav-link">XYZ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#counts" class="nav-link">XYZ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#team" class="nav-link">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/login" class="nav-link">Login</a>
+          </li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </div>
     </div>
-  </header><!-- End Header -->
+  </nav>
+
+  <!-- Page Header -->
+  <div class="header">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  </div>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -51,20 +93,58 @@
 
 <!-- ======= Team Section ======= -->
 
+<!-- newsletter -->
+
+<section id="newsletter" class="text-center p-5 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Sign Up For Newsletters</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores consectetur, quae ducimus voluptates
+          vero repellendus architecto maiores recusandae mollitia?</p>
+        <form class="form-inline justify-content-center">
+          <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+          <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+          <button class="btn btn-primary mb-2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="container d-md-flex py-4">
-
-      <div class="mr-md-auto text-center text-md-left">
-        <div class="copyright">
-          &copy; <strong><span>Made with <i class="fas fa-heart"></i> by GirlMeetup</span></strong>
-        </div>
-
+<footer id="main-footer" class="text-center p-4">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p> Copyright &copy;
+          <span id="year"></span> GirlMeetup</p>
       </div>
-
     </div>
-  </footer><!-- End Footer -->
+  </div>
+</footer>
+
+
+
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1
+    });
+  </script>
+</body>
 
   <%- include('partials/footer') %>
