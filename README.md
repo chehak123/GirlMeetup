@@ -2,6 +2,7 @@
 
 <p align = "center"><img width=55% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
 <br>
+
 ## About
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
