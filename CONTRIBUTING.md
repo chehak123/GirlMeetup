@@ -1,19 +1,19 @@
 
-# Contributing Guidelines  
+# Contributing Guidelines :paperclip: 
 
-This documentation contains a set of guidelines to help you during the contribution process.   
-We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project. Thank you for helping out and remember, No contribution is too small.
+This documentation contains a set of guidelines to help you during the contribution process that help begginners:beginner:.   
+We are happy :blush: to welcome all the contributions from anyone willing to improve/add new scripts to this project. Thank you for helping out and remember, No contribution is too small.
 
-# Submitting Contributions👩‍💻👨‍💻  
+# Lets start Submitting Contributions 👩‍💻👨‍💻  
 Below you will find the process and workflow used to review and merge your changes.
 
-## Step 0 : Identify what you want to contribute.
+## Step :zero: : Identify what you want to contribute :eyes:
 - If you want to add or change a major feature, create an issue and discuss with the maintainer what you would like to change.
 - If you want to work on an Existing Issues or an Issue that you created, check if anyone is working on that issue.
 - If no one is working on the issue, just comment and start working on it otherwise wait for the Issue to be assigned to you.
 ![IssuesDemo](public/image/issues.jpg)
 
-## Step 1 : Fork the Project  
+## Step :one: : Fork the Project  🚀
 - Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.  
 ```  
 $ git clone https://github.com/<your-username>/<repo-name>  
@@ -22,13 +22,13 @@ $ git remote add upstream https://github.com/chehak123/GirlMeetup
 ```  
 ![ForkDemo](public/image/fork.jpg)
 
-- If you have already forked the project, update your copy before working.  
+- If you have already forked the project :bookmark:, update your copy before working.  
 ```  
 $ git remote update  
 $ git checkout <branch-name>  
 $ git rebase upstream/<branch-name>  
 ```  
-## Step 2 : Branch
+## Step :two: : Branch :herb:
 **Make a branch only if you are working on a major feature otherwise skip this step.**
 Create a new branch. Use its name to identify the issue your addressing.  
 ```  
@@ -50,10 +50,10 @@ All branches should have distinct history and should be visually easy to follow,
 
 If you wish to rebase you should be following the [Golden Rule](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) and ahere to the advice in the heading [Aside: Rebase as cleanup is awesome in the coding lifecycle](https://www.atlassian.com/git/articles/git-team-workflows-merge-or-rebase).
 
-## Step 3 : Work Remotely  
+## Step :three: : Work Remotely  :computer:
 - Now you are ready to your work to the remote repository.
 
-## Step 4 : Work on the feature/ issue.  
+## Step :four: : Work on the feature/ issue.  
 - Add all the files/folders needed.  
 - After you've made changes or made your contribution to the project add changes to the branch you've just created by:  
 ```  
@@ -64,14 +64,14 @@ $ git add .
 $ git add <file name>
 ```
 
-## Step 5 : Commit  
+## Step :five: : Commit  🚏
 - To commit give a descriptive message for the convenience of reviewer by:  
 ```
 # This message get associated with all files you have changed  
 $ git commit -m "message"  
 ```  
 
-## Step 6 : Upload your changes   
+## Step :six: : Upload your changes   :sunrise_over_mountains:
 - When your work is ready and complies with the project conventions, upload your changes to your fork:  
 
 ```  
@@ -81,7 +81,7 @@ $ git push -u origin Branch_Name
 - Here is how your branch will look in the fork.
 ![BranchDemo](public/image/branch.jpg)
 
-## Step 7 : Pull Request  
+## Step :seven: : Pull Request 🚩 
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.  
 ![pullrequest-send](public/image/pr.jpg)  
 
@@ -98,18 +98,19 @@ All PRs will have all these tests run and a combined coverage report will be att
 
 ## Need more help?🤔  
 You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:  
-- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)  
-- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)  
-- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)  
-- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)  
-- [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)  
+- :link:[Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)  
+- :link:[Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)  
+- :link:[How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)  
+- :link:[Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)  
+- :link:[Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)  
 
 
-## Things to remember while contributing:
+## Things to remember while contributing::warning:
 * Please make sure to update tests case wherever necessary.
 * If any package is used that was not present in the requirements.txt, add the package name and the version used to the requirements.txt file.
 =======
-# Contributing to GirlMeetup
+# Contributing to GirlMeetup 👩 :two_women_holding_hands:
+
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
 - Reporting a bug
@@ -121,8 +122,8 @@ We love your input! We want to make contributing to this project as easy and tra
 ## We Develop with Github
 We use github to host code, to track issues and feature requests, as well as accept pull requests.
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+## We Use :link:[Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+Pull requests are the best way to propose changes to the codebase (we use :link:[Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
 
 1. Fork the repo and create your branch from `master`.
 2. If you've added code that should be tested, add tests.
@@ -132,9 +133,9 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 6. Issue that pull request!
 
 ## Any contributions you make will be under the MIT Software License
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+In short, when you submit code changes, your submissions are understood to be under the same :link:[MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
+## Report bugs using Github's :bug:[issues](https://github.com/briandk/transcriptase-atom/issues)
 We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
@@ -153,7 +154,7 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 People *love* thorough bug reports. I'm not even kidding.
 
 ## Use a Consistent Coding Style
-I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+I'm again borrowing these from :link:[Facebook's Guidelines](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
 
 * 2 spaces for indentation rather than tabs
 * You can try running `npm run lint` for style unification
@@ -161,5 +162,5 @@ I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebo
 ## License
 By contributing, you agree that your contributions will be licensed under its MIT License.
 
-## References
-This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+## References:information_desk_person:
+This document was adapted from the open-source contribution guidelines for :link: [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
