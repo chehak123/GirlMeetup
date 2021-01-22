@@ -1,6 +1,6 @@
 # GirlMeetup 👩
 
-<p align = "center"><img width=55% src = "https://github.com/pawki07/GirlMeetup/tree/master/images"></p>
+<p align = "center"><img width=55% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
 <br>
 
 ## About
