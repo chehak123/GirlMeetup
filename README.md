@@ -1,19 +1,26 @@
 # GirlMeetup 👩
 
+<p align = "center"><img width=55% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
+<br>
+
 ## About
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
 ## Tech Stack
-FRONTEND - HTML, CSS, Bootstrap
 
-BACKEND - Node.js, Express.js, EJS
+Database   | Front-End     | Back-End
+-------    | ---------     | -------
+mongoDB    | HTML          | Node.js
+&nbsp;     | CSS           | Express.js
+&nbsp;     | Bootstrap     | EJS
 
-DATABASE - mongoDB
 
 ## How to start ? 🎪
 
+<p align= "center"><img width=55% src="https://media.giphy.com/media/JqzadBtonJVr0u8LUg/giphy.gif"></p>
+<br>
 
-#### If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
+#### If you don't have git on your machine, [install](https://help.github.com/articles/set-up-git/) it.
 
 ## Fork this repository 🚀
 
@@ -104,3 +111,22 @@ If you go to your repository on GitHub, you'll see a `Compare & pull request` bu
 Now submit the pull request.
 
 Soon we will be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
+
+## Guide to using the Web Application
+
+
+Now comes the most exciting part of the project. Understanding and making use of the actual Web Application. So let's get started. 🥳 👽
+
+1. Start off by visiting the hosted application. 👻
+
+2. Open the application on your personal browser and you should have it ready to use.
+
+3. As every typical Web Application, we made sure you get the most exciting User Experience working on the application ......🧓
+
+SPOILER ALERT: Be ready to have your mind blown...😜😏
+
+## 👨 Project Admin
+
+-  Chehak Agarwal (https://github.com/chehak123)
+
+## ❤️ Thanks
