@@ -1,5 +1,8 @@
 # GirlMeetup 👩
 
+<p align = "center"><img width=55% src = "https://github.com/pawki07/GirlMeetup/tree/master/images"></p>
+<br>
+
 ## About
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
@@ -17,7 +20,7 @@ mongoDB    | HTML          | Node.js
 <p align= "center"><img width=55% src="https://media.giphy.com/media/JqzadBtonJVr0u8LUg/giphy.gif"></p>
 <br>
 
-#### If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
+#### If you don't have git on your machine, [install](https://help.github.com/articles/set-up-git/) it.
 
 ## Fork this repository 🚀
 
