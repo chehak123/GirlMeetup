@@ -125,7 +125,7 @@ Now comes the most exciting part of the project. Understanding and making use of
 SPOILER ALERT: Be ready to have your mind blown...😜😏
 
 ## Open Source Programs
-<p align = "center"><img width=30% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
+<p align = "center"><img width=20% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
 
 
 ## 👨 Project Admin
