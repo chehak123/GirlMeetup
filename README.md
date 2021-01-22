@@ -1,6 +1,5 @@
 # GirlMeetup 👩
 
-<p align = "center"><img width=55% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
 <br>
 
 ## About
@@ -124,6 +123,10 @@ Now comes the most exciting part of the project. Understanding and making use of
 3. As every typical Web Application, we made sure you get the most exciting User Experience working on the application ......🧓
 
 SPOILER ALERT: Be ready to have your mind blown...😜😏
+
+## Open Source Programs
+<p align = "center"><img width=30% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
+
 
 ## 👨 Project Admin
 
