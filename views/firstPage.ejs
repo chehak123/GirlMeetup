@@ -60,10 +60,57 @@
   </nav>
 
   <!-- Page Header -->
-  <div class="header">
-    <h1>About Us</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-  </div>
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading One</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                quod aliquid inventore vero perspiciatis.</p>
+              <a href="#" class="btn btn-danger btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Heading Two</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                quod aliquid inventore vero perspiciatis.</p>
+              <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading Three</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                quod aliquid inventore vero perspiciatis.</p>
+              <a href="#" class="btn btn-success btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -95,7 +142,7 @@
 
 <!-- newsletter -->
 
-<section id="newsletter" class="text-center p-5 bg-dark text-white">
+<!-- <section id="newsletter" class="text-center p-5 bg-dark text-white">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -110,7 +157,33 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <i class="fab fa-meetup justify-content-center"style="font-size:48px;"></i>
+    <h3 style="text-align:center;">About Us</h3>
+    <p style="text-align:center;">Lorem ipsum dolor sit amet..</p>
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>Sign Up For Newsletters</h5>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+            <button class="btn btn-primary mb-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <h3 style="text-align:center;">Contact</h3>
+    <p style="text-align:center;">Lorem ipsum dolor sit amet..</p>
+
+  </div>
+</div>
 
 <!-- ======= Footer ======= -->
 <footer id="main-footer" class="text-center p-4">

@@ -51,15 +51,50 @@ button #emergency_request{
     border-left: #444 3px solid;
   }
 
-  .header {
+  /* .header {
     padding: 60px;
     text-align: center;
     background: #1abc9c;
     color: white;
     font-size: 30px;
-  }
+  } */
 
   #main-footer {
     background: #000;
     color: #fff;
   }
+
+ /* footer */
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* carousel */
+  .carousel-item {
+    height: 300px;
+  }
+  
+  .carousel-image-1 {
+    background: #6699ff;
+    background-size: cover;
+  }
+  
+  .carousel-image-2 {
+    background: #ff99ff;
+    background-size: cover;
+  }
+  
+  .carousel-image-3 {
+    background: #ffb380;
+    background-size: cover;
+  }
+  
