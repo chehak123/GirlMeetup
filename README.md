@@ -1,4 +1,4 @@
-# GirlMeetup <img width=55px src="./public/image/GirlMeetup_logo.svg" style="margin-bottom:-10px">
+#<img width=100px src="./public/image/GirlMeetup_logo.svg" style="margin-bottom:-10px">
 
 <br>
 
