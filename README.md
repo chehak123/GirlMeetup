@@ -125,7 +125,7 @@ SPOILER ALERT: Be ready to have your mind blown...😜😏
 ## Open Source Programs
 
 <p align = "center">
-<img width=20% src = "https://github.com/chehak123/GirlMeetup/public/image/jwoc_logo.png"></p>
+<img width=20% src = "https://github.com/chehak123/GirlMeetup/blob/master/public/image/jwoc_logo.png"></p>
 
 ## 👨 Project Admin
 
