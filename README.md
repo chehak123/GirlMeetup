@@ -1,4 +1,4 @@
-#<img width=100px src="./public/image/GirlMeetup_logo.svg" style="margin-bottom:-10px">
+<img width=150px src="./public/image/GirlMeetup_logo.svg" style="margin-bottom:-10px">
 
 <br>
 
