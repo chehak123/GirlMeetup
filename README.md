@@ -6,6 +6,9 @@
 
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
 
+## Link to application
+https://girlmeetup.herokuapp.com/
+
 ## Tech Stack
 
 | Database | Front-End | Back-End   |
