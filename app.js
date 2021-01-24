@@ -15,18 +15,6 @@ app.get("/", function(req, res){
   res.render("firstPage");
 });
 
-// app.get("/secrets", function(req, res){
-//   User.find({"secret": {$ne: null}}, function(err, foundUsers){
-//     if (err){
-//       console.log(err);
-//     } else {
-//       if (foundUsers) {
-//         res.render("secrets", {usersWithSecrets: foundUsers});
-//       }
-//     }
-//   });
-// });
-
 app.listen(port, function() {
   console.log("Server started on port 3000.");
 });
