@@ -124,8 +124,8 @@ SPOILER ALERT: Be ready to have your mind blown...😜😏
 
 ## Open Source Programs
 
-<p align = "center"><img width=20% src="./public/image/GirlMeetup_logo.svg" style="margin-right:30px">
-<img width=20% src = "https://github.com/chehak123/public/image/jwoc logo.png"></p>
+<p align = "center">
+<img width=20% src = "https://github.com/chehak123/public/image/jwoc_logo.png"></p>
 
 ## 👨 Project Admin
 
