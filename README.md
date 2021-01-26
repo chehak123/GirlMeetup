@@ -1,18 +1,21 @@
-# GirlMeetup 👩
+<img width=150px src="./public/image/GirlMeetup_logo.svg" style="margin-bottom:-10px">
 
 <br>
 
 ## About
+
 This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
+
+## Link to application
+https://girlmeetup.herokuapp.com/
 
 ## Tech Stack
 
-Database   | Front-End     | Back-End
--------    | ---------     | -------
-mongoDB    | HTML          | Node.js
-&nbsp;     | CSS           | Express.js
-&nbsp;     | Bootstrap     | EJS
-
+| Database | Front-End | Back-End   |
+| -------- | --------- | ---------- |
+| mongoDB  | HTML      | Node.js    |
+| &nbsp;   | CSS       | Express.js |
+| &nbsp;   | Bootstrap | EJS        |
 
 ## How to start ? 🎪
 
@@ -37,7 +40,6 @@ git clone "url you just copied"
 ```
 
 where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
-
 
 For example:
 
@@ -113,7 +115,6 @@ Soon we will be merging all your changes into the master branch of this project.
 
 ## Guide to using the Web Application
 
-
 Now comes the most exciting part of the project. Understanding and making use of the actual Web Application. So let's get started. 🥳 👽
 
 1. Start off by visiting the hosted application. 👻
@@ -125,11 +126,12 @@ Now comes the most exciting part of the project. Understanding and making use of
 SPOILER ALERT: Be ready to have your mind blown...😜😏
 
 ## Open Source Programs
-<p align = "center"><img width=20% src = "https://github.com/pawki07/GirlMeetup/blob/master/images/jwoc%20logo.png"></p>
 
+<p align = "center">
+<img width=20% src = "https://github.com/chehak123/GirlMeetup/blob/master/public/image/jwoc_logo.png"></p>
 
 ## 👨 Project Admin
 
--  Chehak Agarwal (https://github.com/chehak123)
+- Chehak Agarwal (https://github.com/chehak123)
 
 ## ❤️ Thanks
