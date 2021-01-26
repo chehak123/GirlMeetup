@@ -1,0 +1,107 @@
+body {
+  font-size: 20px;
+}
+
+.site-footer
+{
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  background-color:#132743;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#EEEEEE;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.site-footer h5
+{
+  color:#fff;
+  font-size:16px;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a.foot-link
+{
+  color:#ffffff;
+  margin-left: 8%;
+}
+
+h4 {
+  color:#79DC68;
+}
+
+.copyright {
+  color:#79DC68;
+}
+
+a.foot-link:hover
+{
+  color:#79DC68;
+  text-decoration:none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10%;
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:5px;
+  border-radius:100%;
+  background-color:#33353d;
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+
+}
+
+.footer-logo{
+  display:inline-block;
+  width: 50px;
+  margin: 0 auto;
+  margin-right: 10px;
+}
+
+.footer-logo:hover {
+  width: 65px;
+}
+
+.fa-mail {
+  color: #79DC68;
+}
+
+.fa-mail:hover {
+  color: #EEEEEE;
+  width: 30px;
+}
+
+.fa-github {
+  color: #79DC68 !important;
+}
+
+.fa-github:hover {
+  color: #ffffff !important;
+  border-radius: 5%;
+  background-blend-mode: hard-light;
+}
+
+.fa-arrow-circle-up {
+  color: #ffffff !important;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.fa-arrow-circle-up:hover {
+  color: #79DC68 !important;
+  bottom: 30px;
+}
