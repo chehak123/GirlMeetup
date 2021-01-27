@@ -869,3 +869,145 @@ iframe{
     background-attachment: fixed;
     background-size: 100% 100%;
   }
+
+
+
+
+
+/* Footer */
+body {
+  font-size: 80vw;
+}
+
+
+.site-footer
+{
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  background-color:#132743;
+
+  font-size:1em;
+  line-height:150%;
+  color:#EEEEEE;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.site-footer h5
+{
+  color:#fff;
+  font-size:2rem;
+  margin-top:5%;
+  letter-spacing:2%;
+}
+
+.site-footer a.foot-link
+{
+  color:#ffffff;
+  margin-left: 8%;
+}
+
+h4 {
+  color:#79DC68;
+}
+
+.copyright {
+  color:#79DC68;
+}
+
+a.foot-link:hover
+{
+  color:#79DC68;
+  text-decoration:none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 10%;
+}
+
+.footer-logo {
+  display:inline-block;
+  width: 17%;
+  margin: 0 auto;
+  margin-right: 1%;
+}
+
+.footer-logo:hover {
+  width: 20%;
+}
+
+.fa-mail {
+  color: #79DC68;
+}
+
+.fa-mail:hover {
+  color: #EEEEEE;
+  width: 30px;
+}
+
+.fa-github {
+  color: #79DC68 !important;
+}
+
+.fa-github:hover {
+  color: #ffffff !important;
+  border-radius: 5%;
+  background-blend-mode: hard-light;
+}
+
+.fa-arrow-circle-up {
+  color: #ffffff !important;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.fa-arrow-circle-up:hover {
+  color: #79DC68 !important;
+  bottom: 30px;
+}
+
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+@media only screen and (min-width:600px)
+{
+  body {
+    font-size: 16px;
+  }
+
+  .site-footer {
+    font-size: 1rem;
+    padding:4% 0 2%;
+  }
+
+  .footer-ns {
+    position: right;
+  }
+}
+
+#name {
+  width: 60%;
+  margin-top: 2%;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+#email {
+  width: 85%;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+#name:hover,#mail:active {
+  border-color:  #79DC68 !important;
+}
+
+#email:hover,#email:active {
+  border-color:  #79DC68 !important;
+}
