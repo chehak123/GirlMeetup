@@ -1,6 +1,7 @@
 body {
-  font-size: 20px;
+  font-size: 80vw;
 }
+
 
 .site-footer
 {
@@ -8,20 +9,22 @@ body {
   width: 100%;
   bottom:0;
   background-color:#132743;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
+
+  font-size:1em;
+  line-height:150%;
   color:#EEEEEE;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
 .site-footer h5
 {
   color:#fff;
-  font-size:16px;
-  margin-top:5px;
-  letter-spacing:2px
+  font-size:2rem;
+  margin-top:5%;
+  letter-spacing:2%;
 }
+
 .site-footer a.foot-link
 {
   color:#ffffff;
@@ -41,38 +44,20 @@ a.foot-link:hover
   color:#79DC68;
   text-decoration:none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-left: 10%;
 }
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:5px;
-  border-radius:100%;
-  background-color:#33353d;
-}
 
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-
-}
-
-.footer-logo{
+.footer-logo {
   display:inline-block;
-  width: 50px;
+  width: 17%;
   margin: 0 auto;
-  margin-right: 10px;
+  margin-right: 1%;
 }
 
 .footer-logo:hover {
-  width: 65px;
+  width: 20%;
 }
 
 .fa-mail {
@@ -104,4 +89,48 @@ a.foot-link:hover
 .fa-arrow-circle-up:hover {
   color: #79DC68 !important;
   bottom: 30px;
+}
+
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+@media only screen and (min-width:600px)
+{
+  body {
+    font-size: 16px;
+  }
+
+  .site-footer {
+    font-size: 1rem;
+    padding:4% 0 2%;
+  }
+
+  .footer-ns {
+    position: right;
+  }
+}
+
+#name {
+  width: 60%;
+  margin-top: 2%;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+#email {
+  width: 85%;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+#name:hover,#mail:active {
+  border-color:  #79DC68 !important;
+}
+
+#email:hover,#email:active {
+  border-color:  #79DC68 !important;
 }
