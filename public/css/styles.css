@@ -1,3 +1,4 @@
+
 iframe{
     display: inline;
     border-style: solid ;
@@ -5,6 +6,11 @@ iframe{
     border-color: red;
     position:relative;
     right:120px;
+  }
+
+  .headpadding{
+    padding-left: 2px;
+    padding-right: 1px;
   }
   
   body {
@@ -211,14 +217,8 @@ iframe{
   #header .container{
     display: inline;
   }
-  
-  @media (max-width: 992px) {
-    #header {
-      padding: 12px 0;
-    }
-  }
-  
-  /*--------------------------------------------------------------
+
+  /*-------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
   /* Desktop Navigation */
@@ -870,55 +870,78 @@ iframe{
     background-size: 100% 100%;
   }
 
+  #slider-animation{
+    max-height:550px;
+  }
+
+  .heading-box h2{
+    width:100%; 
+    color: red; 
+  }
+
+  .carousel-item img{
+    width: 100%;
+    height: 400px;
+  }
+  .text-box {
+  	position: absolute;
+  	top: 50%;
+  	left: 15%;
+  	right: 15%;
+  	color: #000;
+  	transform: translateY(-50%);
+  }
+
+  .carouselbox{
+    background-color: #c9c9cf;
+    width: 100%; 
+    height: 400px;
+  }
 
 
 
 
-/* Footer */
-body {
-  font-size: 80vw;
-}
-
-
+/*************** Footer ***************/
 .site-footer
 {
-  position: fixed;
+  position: bottom;
   width: 100%;
   bottom:0;
   background-color:#132743;
-
-  font-size:1em;
+  padding-top: 20px;
+  font-size:14px;
   line-height:150%;
   color:#EEEEEE;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 
-.site-footer h5
-{
-  color:#fff;
-  font-size:2rem;
-  margin-top:5%;
-  letter-spacing:2%;
-}
+
 
 .site-footer a.foot-link
 {
-  color:#ffffff;
+  color:#ffffff9e;
   margin-left: 8%;
+  margin-top: 17px;
+  font-size: 16px;
 }
 
-h4 {
+.foot-link {
+  line-height: 150%;
+}
+
+.site-footer h4 {
   color:#79DC68;
 }
+
 
 .copyright {
   color:#79DC68;
 }
 
-a.foot-link:hover
+.site-footer a.foot-link:hover
 {
-  color:#79DC68;
+  color:#79DC68 !important;
   text-decoration:none;
   cursor: pointer;
   font-size: 1.1rem;
@@ -929,6 +952,7 @@ a.foot-link:hover
 .footer-logo {
   display:inline-block;
   width: 17%;
+  padding-top: 22px;
   margin: 0 auto;
   margin-right: 1%;
 }
@@ -948,6 +972,7 @@ a.foot-link:hover
 
 .fa-github {
   color: #79DC68 !important;
+  padding-bottom: 20px;
 }
 
 .fa-github:hover {
@@ -968,46 +993,45 @@ a.foot-link:hover
   bottom: 30px;
 }
 
-
-html {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-
-@media only screen and (min-width:600px)
-{
-  body {
-    font-size: 16px;
-  }
-
-  .site-footer {
-    font-size: 1rem;
-    padding:4% 0 2%;
-  }
-
-  .footer-ns {
-    position: right;
-  }
+body {
+  height: 100vh;
 }
 
 #name {
   width: 60%;
   margin-top: 2%;
   border-radius: 7px;
-  padding: 3px;
+  padding: 5px;
 }
 
 #email {
   width: 85%;
   border-radius: 7px;
-  padding: 3px;
+  padding: 5px;
 }
 
 #name:hover,#mail:active {
   border-color:  #79DC68 !important;
+  border-style: double;
 }
 
 #email:hover,#email:active {
   border-color:  #79DC68 !important;
+  border-style: double;
+}
+
+@media only screen and (max-width: 490px)
+{
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+
+  body {
+    height: 100vh;
+  }
+}
+
+html {
+  overflow-x: hidden;
 }
