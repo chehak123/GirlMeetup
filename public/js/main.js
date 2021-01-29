@@ -6,11 +6,12 @@ var a = document.getElementById("loginchange");
 var b = document.getElementById("_btn");
 var open = document.getElementById("modal");
 
+
 function signup() {
   y.style.visibility = "visible";
   x.style.left = "-400px";
   y.style.left = "50px";
-  z.className = "toggle-btn active";
+  z.className = "toggle-btn active-modal";
   a.className = "toggle-btn";
   z.style.width = "120px";
 }
@@ -19,7 +20,7 @@ function login() {
   x.style.left = "50px";
   y.style.left = "450px";
   z.className = "toggle-btn";
-  a.className = "toggle-btn active";
+  a.className = "toggle-btn active-modal";
   z.style.width = "100px";
 }
 

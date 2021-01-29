@@ -1,13 +1,15 @@
-require("dotenv").config();
-const express = require("express"),
-  port = process.env.PORT || 3000,
-  app = express(),
-  mongoose = require("mongoose"),
-  passport = require("passport"),
-  bodyParser = require("body-parser"),
-  LocalStrategy = require("passport-local"),
-  passportLocalMongoose = require("passport-local-mongoose"),
-  User = require("./models/user");
+require('dotenv').config();
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
+let port = process.env.PORT || 3000;
+const app = express();
+const mongoose = require("mongoose");
+const passport = require("passport");
+const LocalStrategy = require("passport-local");
+const passportLocalMongoose = require("passport-local-mongoose");
+const  User = require("./models/user");
+
 
 //Connecting database
 mongoose.connect(
@@ -31,26 +33,24 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser()); 
 passport.use(new LocalStrategy(User.authenticate()));
 
-app.set("view engine", "ejs");
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 
-//=======================
-//      R O U T E S
-//=======================
-
-app.get("/", (req, res) => {
-  res.render("index");
+app.get("/", function(req, res){
+  res.render("index", {currentUser: req.user});
 });
 
-app.get("/home", isLoggedIn, (req, res) => {
-  res.render("home");
-  //   { name: req.name }
+app.listen(port, function() {
+  console.log("Server started on port 3000.");
 });
 
-//Auth Routes
+
+//Auth Routes 
 app.get("/login", (req, res) => {
   res.render("/" + "#login_new_user");
 });
@@ -58,7 +58,7 @@ app.get("/login", (req, res) => {
 app.post(
   "/login",
   passport.authenticate("local", {
-    successRedirect: "/home",
+    successRedirect: "/",
     failureRedirect: "/" + "#login_failed",
   }),
   function (req, res) {}
@@ -100,11 +100,4 @@ function isLoggedIn(req, res, next) {
   res.redirect("/" + "#login");
 }
 
-//Listen On Server
-app.listen(port, function (err) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Server Started At Port 3000");
-  }
-});
+

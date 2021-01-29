@@ -1,53 +1,17 @@
 <%- include('partials/header') %>
+<!-- ======= Carousel ====== -->
 
-<body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- <h1 class="logo">GirlMeetup</h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="/" class="logo"><img src="" alt="" class="img-fluid" /></a>
+<%- include('partials/carousel') %>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li>
-            <a href="#hero" class="btn-get-quote"><b>Home</b></a>
-          </li>
-          <li>
-            <a href="#about" class="btn-get-quote"><b>About</b></a>
-          </li>
-          <li>
-            <a href="#slot" class="btn-get-quote"><b>xyz</b></a>
-          </li>
-          <li>
-            <a href="#counts" class="btn-get-quote"><b>xyz</b></a>
-          </li>
-          <li>
-            <a href="#faq" class="btn-get-quote"><b>FAQ</b></a>
-          </li>
-          <li>
-            <a href="#team" class="btn-get-quote"><b>Team</b></a>
-          </li>
-          <li>
-            <a id="modal_btn" href="#" class="btn-get-quote"><b>Login</b></a>
-          </li>
-          <li>
-            <a
-              style="visibility: hidden"
-              class="btn btn-get-quote btn-primary"
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- .nav-menu -->
-    </div>
+<!-- ======= Modal form ====== -->
+<%- include('partials/modal_form') %>
 
-    <!--==========Login Modal============-->
-    <%- include('partials/modal_form') %>
-  </header>
-  <!-- End Header -->
-  <%- include('partials/toast') %>
-  <!-- ======= Hero Section ======= -->
+<!-- ======= Toast UI ====== -->
+<%- include('partials/toast') %>
+
+
+<!-- ======= Hero Section ======= -->
+
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
       <div class="row">
@@ -86,6 +50,6 @@
   <!-- End Hero -->
 
   <!-- ======= Team Section ======= -->
-
+  
   <%- include('partials/footer') %>
-</body>
+
