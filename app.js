@@ -2,7 +2,8 @@ require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-let port = process.env.PORT || 3001;
+
+let port = process.env.PORT || 3000
 const app = express();
 const mongoose = require("mongoose");
 const passport = require("passport");
@@ -42,13 +43,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get("/", function(req, res){
+
   res.render("index", {currentUser: req.user});
 });
-
-app.listen(port, function() {
-  console.log("Server started on port 3000.");
-});
-
 
 //Auth Routes 
 app.get("/login", (req, res) => {
@@ -86,6 +83,9 @@ app.post("/register", (req, res) => {
       });
     }
   );
+
+  res.render("index");
+
 });
 
 app.get("/logout", (req, res) => {
@@ -99,5 +99,9 @@ function isLoggedIn(req, res, next) {
   }
   res.redirect("/" + "#login");
 }
+
+app.listen(port, function() {
+  console.log("Server started on port 3000.");
+});
 
 

@@ -898,6 +898,7 @@ iframe{
     height: 400px;
   }
 
+
   /* Toast UI */
   .custom-toast-ui{
     position: absolute;
@@ -918,3 +919,137 @@ iframe{
   .submit-btn{
     margin-top: 20px !important;
   }
+
+/*************** Footer ***************/
+.site-footer
+{
+  position: bottom;
+  width: 100%;
+  bottom:0;
+  background-color:#132743;
+  padding-top: 20px;
+  font-size:14px;
+  line-height:150%;
+  color:#EEEEEE;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.site-footer a.foot-link
+{
+  color:#ffffff9e;
+  margin-left: 20%;
+  margin-top: 17px;
+  font-size: 12px;
+}
+
+.foot-link {
+  line-height: 150%;
+}
+
+.site-footer h4 {
+  color:#79DC68;
+}
+
+
+.copyright {
+  color:#79DC68;
+}
+
+.site-footer a.foot-link:hover
+{
+  color:#79DC68 !important;
+  text-decoration:none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 18%;
+}
+
+.footer-logo {
+  display:inline-block;
+  width: 17%;
+  padding-top: 22px;
+  margin: 0 auto;
+  margin-right: 1%;
+}
+
+.footer-logo:hover {
+  width: 20%;
+}
+
+.fa-mail {
+  color: #79DC68;
+}
+
+.fa-mail:hover {
+  color: #EEEEEE;
+  width: 30px;
+}
+
+.fa-github {
+  color: #79DC68 !important;
+  padding-bottom: 20px;
+}
+
+.fa-github:hover {
+  color: #ffffff !important;
+  border-radius: 5%;
+  background-blend-mode: hard-light;
+}
+
+.fa-arrow-circle-up {
+  color: #ffffff !important;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.fa-arrow-circle-up:hover {
+  color: #79DC68 !important;
+  bottom: 30px;
+}
+
+body {
+  height: 100vh;
+}
+
+#name {
+  width: 60%;
+  margin-top: 2%;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+#email {
+  width: 85%;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+#name:hover,#mail:active {
+  border-color:  #79DC68 !important;
+  border-style: double;
+}
+
+#email:hover,#email:active {
+  border-color:  #79DC68 !important;
+  border-style: double;
+}
+
+@media only screen and (max-width: 490px)
+{
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+
+  body {
+    height: 100vh;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
