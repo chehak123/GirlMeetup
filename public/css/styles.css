@@ -916,14 +916,12 @@ iframe{
   border-top-right-radius: 1rem;
 }
 
-
-
 .site-footer a.foot-link
 {
   color:#ffffff9e;
-  margin-left: 8%;
+  margin-left: 20%;
   margin-top: 17px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .foot-link {
@@ -944,9 +942,9 @@ iframe{
   color:#79DC68 !important;
   text-decoration:none;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  margin-left: 10%;
+  margin-left: 18%;
 }
 
 .footer-logo {
