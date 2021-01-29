@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.html-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-weight: bolder;
+}
+
+.form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #132743;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+    animation-name: topAnimation;
+    animation-duration: 0.4s;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    color: #79dc68;
+    font-size: 24px;
+}
+
+.button-wrapper {
+    width: 230px;
+    position: relative;
+    background: transparent;
+    margin-bottom: 300px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0 !important;
+    outline: none !important;
+    position: relative;
+    color: grey;
+}
+
+.active {
+    width: 110px;
+    background: #79dc68;
+    border-radius: 30px;
+    transition: 0.3s;
+    color: black;
+}
+
+.input-container {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    color: #fff;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #79dc68;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.cbox {
+    margin: 30px 10px 30px 0;
+}
+
+.modal-span {
+    color: #777;
+    font-size: 12px;
+    bottom: 71px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#signup {
+    left: 300px;
+    visibility: hidden;
+}
+
+.register-btn {
+    cursor: pointer;
+    background: #1e90ff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.register-btn:hover {
+    background: #1174d4;
+}
+
+.modal-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes topAnimation {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
