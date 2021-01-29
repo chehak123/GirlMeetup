@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get("/", function(req, res){
-  res.render("firstPage");
+  res.render("index");
 });
 
 app.listen(port, function() {
