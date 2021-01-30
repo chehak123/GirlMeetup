@@ -48,12 +48,16 @@
     <link rel="stylesheet" href="css/admin.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/userstyle.css" />
+
+    <link rel="stylesheet" href="css/modal_form.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="icon" href="image/favicon.png" />
     <script src="/js/script.js"></script>
+
   </head>
 
 <body>
@@ -95,9 +99,18 @@
             <a class="nav-link btn-get-quote text-white" href="#Team">FAQ</a>
           </li>
           <li class="nav-item headpadding">
+
+            <% if(!currentUser){ %>
+              <a id="modal_btn" class="nav-link btn-get-quote text-white" href="#Login">Login</a>
+      <% } else { %>
+        <a class="nav-link btn-get-quote text-white btn btn-success" href="/logout">Logout</a>
+      <% } %>
+
             <a class="nav-link btn-get-quote text-white" href="#Login">Login</a>
+
           </li>       
         </ul>
       </div>
     </nav>
   </header>
+

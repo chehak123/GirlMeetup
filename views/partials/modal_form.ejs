@@ -1,0 +1,77 @@
+<div class="html-container">
+  <div id="modal" class="modal-container">
+    <div class="form-box">
+      <div class="close-btn"><i class="far fa-times-circle"></i></div>
+      <div class="button-wrapper" id="_btn">
+        <div id="btn"></div>
+        <button
+          type="button"
+          class="toggle-btn active-modal"
+          id="loginchange"
+          onclick="login()"
+        >
+          Login
+        </button>
+        <button type="button" class="toggle-btn" id="change" onclick="signup()">
+          Signup
+        </button>
+      </div>
+
+      <form id="login" action="/login" method="POST" class="input-container">
+        <input
+          id="log_username"
+          type="text"
+          class="input-field"
+          name="username"
+          placeholder="Email ID"
+          required
+        />
+        <input
+          id="log_password"
+          type="text"
+          class="input-field"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+
+      <form
+        action="/register"
+        method="POST"
+        id="signup"
+        class="input-container"
+      >
+        <input
+          type="text"
+          name="name"
+          id="name_id"
+          class="input-field"
+          placeholder="Full Name"
+          required
+        />
+        <input
+          id="username"
+          name="username"
+          type="email"
+          class="input-field"
+          placeholder="Email ID"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="input-field"
+          placeholder="Password"
+          required
+        />
+
+        <button type="submit" class="submit-btn">Signup</button>
+      </form>
+    </div>
+  </div>
+</div>
+
