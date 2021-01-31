@@ -1035,3 +1035,74 @@ body {
 html {
   overflow-x: hidden;
 }
+
+
+
+/* FAQ section */
+.card {
+  background-color: #e9ecef;
+  border: none;
+}
+
+.card-header {
+  background-color: #132743;
+  border-radius: 5rem;
+  margin-top: 5px;
+}
+
+#headingOne,#headingTwo,#headingThree,#headingFour,#headingFive,#headingSix,#headingSeven {
+  border-radius: 5rem;
+}
+
+.faq-h {
+  margin-bottom: 5%;
+  color: #132743;
+}
+
+.card-header .btn-link {
+  font-weight: 400;
+  color: #79dc68d6;
+  text-decoration: none;
+}
+
+.card-header .btn-link:hover, .card-header .btn-link:active, .card-header .btn-link:focus {
+  font-weight: 500;
+  color: #79DC68;
+}
+ 
+.card-header i {
+  margin-right: 2rem;
+}
+
+
+
+/* Mail us */
+
+.contact-box {
+  margin-top: 5%;
+  margin-left: 44%;
+}
+
+.contact-box .fas {
+  font-size: 40px;
+}
+
+.mail-text {
+  color: #132743d1;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.mail-text:visited,.mail-text:hover,.mail-text:active,.mail-text:focus {
+  color: #132743;
+  text-decoration: none;
+  text-shadow: 0 0 4px #79DC68;
+  font-weight: 600;
+}
+
+.faq-mail:visited,.faq-mail:hover,.faq-mail:active,.faq-mail:focus {
+  color: #132743;
+  text-decoration: none;
+  font-size: 45px;
+  text-shadow: 0 0 10px #79DC68;
+}
