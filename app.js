@@ -100,6 +100,11 @@ function isLoggedIn(req, res, next) {
   res.redirect("/" + "#login");
 }
 
+app.get("/faq", (req, res) => {
+  res.render("faq",{currentUser: req.user});
+});
+
+
 app.listen(port, function() {
   console.log("Server started on port 3000.");
 });
