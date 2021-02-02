@@ -12,6 +12,7 @@ wow = new WOW(
     var section = document.createElement('section');
     section.className = 'section--purple wow fadeInDown';
     this.parentNode.insertBefore(section, this);
+  }
 
 
 /* WOW animations */
@@ -32,3 +33,37 @@ new WOW().init();
             $(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-right");
           });
       });
+
+
+/* Footer scroll in */
+var isShowing = false;
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() === $(document).height()) {
+          $('.site-footer').slideToggle();
+          isShowing = true;
+      } else if (isShowing === true && $(window).scrollTop() + $(window).height() <= $(document).height() * 0.9) {
+          $('.site-footer').slideToggle();
+          isShowing = false;
+      }
+  });
+
+
+
+/* Footer Scroll to top button */
+var target = document.querySelector("site-footer");
+
+function callback(entries, observer) {
+  // The callback will return an array of entries, even if you are only observing a single item
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Show button
+      scrollToTopBtn.classList.add('top-arrow')
+    } else {
+      // Hide button
+      scrollToTopBtn.classList.remove('top-arrow')
+    }
+  });
+}
+
+let observer = new IntersectionObserver(callback);
+observer.observe(target);
