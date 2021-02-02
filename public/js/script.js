@@ -12,6 +12,7 @@ wow = new WOW(
     var section = document.createElement('section');
     section.className = 'section--purple wow fadeInDown';
     this.parentNode.insertBefore(section, this);
+  }
 
 
 /* WOW animations */
