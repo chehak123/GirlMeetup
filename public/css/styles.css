@@ -587,6 +587,27 @@ iframe{
   /*--------------------------------------------------------------
   # About
   --------------------------------------------------------------*/
+
+  /* Toast UI */
+  .custom-toast-ui{
+    position: absolute;
+    bottom: 10px;
+    z-index: 9999;
+  }
+
+  .toast{
+    width: 48%;
+    max-width: 50%;
+  }
+
+  .toast-header {
+    color : #fff;
+    background-color: rgb(195 51 51 / 85%);
+  }
+
+  .submit-btn{
+    margin-top: 20px !important;
+  }
   
   .about .content h2 {
     font-weight: 550;
@@ -899,26 +920,7 @@ iframe{
   }
 
 
-  /* Toast UI */
-  .custom-toast-ui{
-    position: absolute;
-    bottom: 10px;
-    z-index: 9999;
-  }
 
-  .toast{
-    width: 48%;
-    max-width: 50%;
-  }
-
-  .toast-header {
-    color : #fff;
-    background-color: rgb(195 51 51 / 85%);
-  }
-
-  .submit-btn{
-    margin-top: 20px !important;
-  }
 
 /*************** Footer ***************/
 .site-footer
@@ -934,6 +936,8 @@ iframe{
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
+
 
 .site-footer a.foot-link
 {
@@ -961,9 +965,9 @@ iframe{
   color:#79DC68 !important;
   text-decoration:none;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  margin-left: 18%;
+  margin-left: 10%;
 }
 
 .footer-logo {
@@ -1049,11 +1053,24 @@ body {
   }
 }
 
+
+
+
+body,
 html {
-  overflow-x: hidden;
+  height: 1000px;
+}
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 266px;
+  display:none;
 }
 
-/************** FAQ section ****************/
+
+/* FAQ section */
 .card {
   background-color: #e9ecef;
   border: none;
@@ -1096,6 +1113,7 @@ html {
 .contact-box {
   margin-top: 5%;
   margin-left: 44%;
+  margin-bottom: 17%;
 }
 
 .contact-box .fas {
@@ -1106,6 +1124,7 @@ html {
   color: #132743d1;
   text-decoration: none;
   font-weight: 400;
+  
 }
 
 .mail-text:visited,.mail-text:hover,.mail-text:active,.mail-text:focus {
@@ -1115,6 +1134,10 @@ html {
   font-weight: 600;
 }
 
+.faq-mail {
+  margin-bottom: 60%;
+}
+
 .faq-mail:visited,.faq-mail:hover,.faq-mail:active,.faq-mail:focus {
   color: #132743;
   text-decoration: none;
@@ -1122,3 +1145,12 @@ html {
   text-shadow: 0 0 10px #79DC68;
 }
 
+
+
+
+/* Scroll Arrow */
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
