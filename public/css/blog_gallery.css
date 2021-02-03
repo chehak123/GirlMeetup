@@ -1,0 +1,31 @@
+.vertical_container_detail{
+    border-radius: 15px;
+}
+
+.inputtext{
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 15px;
+    outline: none; 
+    border: none; 
+    background-color: whitesmoke;
+    width: 350px;
+}
+
+.row.content {height: 450px}
+ 
+.sidenav {
+    padding-top: 20px;
+    margin: 0 10px;
+    height: 100%;
+}
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }

@@ -104,6 +104,12 @@ app.get("/faq", (req, res) => {
   res.render("faq",{currentUser: req.user});
 });
 
+
+
+app.get("/blog_gallery", (req, res) => {
+  res.render("blog_gallery",{currentUser: req.user});
+});
+
 app.get("/blog", (req, res) => {
   res.render("blog",{currentUser: req.user});
 });
