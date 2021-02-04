@@ -15,7 +15,6 @@
 }
 
 .row.content {height: 450px}
- 
     
     @media screen and (max-width: 767px) {
       .sidenav {
