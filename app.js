@@ -10,7 +10,7 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const passportLocalMongoose = require("passport-local-mongoose");
 const  User = require("./models/user");
-
+const request = require('request');
 
 //Connecting database
 mongoose.connect(
@@ -114,9 +114,57 @@ app.get("/blog", (req, res) => {
   res.render("blog",{currentUser: req.user});
 });
 
+app.get("/success", (req, res) => {
+  res.render("success",{currentUser: req.user});
+});
+
+app.get("/failure", (req, res) => {
+  res.render("failure",{currentUser: req.user});
+});
+
+app.post("/newsletter", (req,res)=> {
+  var Name = req.body.name;
+  var Email = req.body.email;
+
+  var data = {
+    members: [
+      {
+        email_address: Email,
+        status: "subscribed",
+        merge_fields:{
+          FNAME: Name
+        }
+      }
+    ]
+  };
+
+  var jsonData = JSON.stringify(data);
+
+  var options = {
+    url : "https://us7.api.mailchimp.com/3.0/lists/836f8723ea",
+    method: "POST",
+    headers: {
+      "Authorization":"Personal 9a289c1e24545e876ec5bc9c62a09ae2-us7"
+    },
+    body:jsonData
+  };
+
+  request(options,(error,response,body)=>{
+    if(error){
+      res.redirect('/failure')
+    } else {
+      if(response.statusCode === 200){
+        res.redirect('/success');
+      } else {
+        res.redirect('/failure');
+      }      
+    }
+  })
+});
 
 app.listen(port, function() {
   console.log("Server started on port 3000.");
 });
 
-
+//9a289c1e24545e876ec5bc9c62a09ae2-us7 api key
+//836f8723ea list
