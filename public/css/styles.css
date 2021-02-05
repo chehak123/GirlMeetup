@@ -1166,8 +1166,10 @@ html {
   background-color: #79DC68;
   background-image: linear-gradient(#79DC68,#21d601);
   padding-bottom: 0%;
-  border-radius: 0 0 120% 17rem;
-
+  border-radius: 0 0 120% 20rem;
+  max-height: 70vh;
+  border: 2px double;
+  border-color: #132743;
 }
 
 .new-header-heading {
@@ -1175,16 +1177,15 @@ html {
   font-size: 2.4rem;
   display: inline;
   color: #132743;
-  text-shadow: 2px 2px rgb(241, 241, 241);
+  text-shadow: 2px 2px 4px rgb(241, 241, 241);
   text-decoration: yellow;
   position: relative;
 }
 
 
 .header-laptop {
-  width: 150%;
-  float: left;
-  
+  width: 157%;
+  float: left; 
   padding-top: 1vh;
   display: inline;
 }
@@ -1198,13 +1199,13 @@ html {
 }
 
 .header-girls {
-  width: 200%;
+  width: 235%;
   padding-bottom: 0;
   position: relative;
   display: block;
   float: right;
-  padding-top: 3%;
-  padding-left: 90%;
+  padding-top: 0%;
+  padding-left: 60%;
 }
 
 
