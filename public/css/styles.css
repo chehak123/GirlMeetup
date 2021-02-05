@@ -1054,7 +1054,7 @@ body {
   border-style: double;
 }
 
-@media only screen and (max-width: 490px)
+@media (max-width: 490px)
 {
   footer {
     position: sticky;
@@ -1159,53 +1159,77 @@ html {
 
 
 
+
+
 /* New Header */
 
-.new-header {
-  padding-top: 5vw;
-  background-color: #79DC68;
-  background-image: linear-gradient(#79DC68,#21d601);
-  padding-bottom: 0%;
-  border-radius: 0 0 120% 20rem;
-  max-height: 70vh;
-  border: 2px double;
-  border-color: #132743;
+ .new-header {
+    padding-top: 5vw;
+    background-color: #79DC68;
+    background-image: linear-gradient(#79DC68,#21d601);
+    padding-bottom: 0%;
+    border-radius: 0 0 120% 20rem;
+    max-height: 70vh;
+  }
+  
+  .new-header-heading {
+    margin: 0 auto;
+    font-size: 2.4rem;
+    display: inline;
+    color: #132743;
+    text-shadow: 2px 2px 3px rgb(241, 241, 241);
+    text-decoration: yellow;
+    position: relative;
+  }
+  
+  
+  .header-laptop {
+    width: 157%;
+    float: left; 
+    padding-top: 1vh;
+    display: inline;
+  }
+  
+  .header-p {
+    padding-right: 2%;
+    display: block;
+    font-size: 1.2rem;
+    padding-top: 3%;
+    color: #ffffff;
+  }
+    
+  .header-girls {
+    width: 235%;
+    padding-bottom: 0;
+    position: relative;
+    display: block;
+    float: right;
+    padding-top: 0%;
+    padding-left: 60%;
+  }
+
+
+
+
+  @media only screen and (max-width: 990px)
+{
+  .header-p {
+    font-size: 1.5rem;
+  }
+  
+  .new-header-heading {
+    font-size: 3.5rem;
+  }
+  
+  .header-laptop {
+    display: none;
+    width: 0;
+  }
+  
+  #laptop-girl {
+    display: none;
+    width: 0;
+  }
+  
 }
-
-.new-header-heading {
-  margin: 0 auto;
-  font-size: 2.4rem;
-  display: inline;
-  color: #132743;
-  text-shadow: 2px 2px 4px rgb(241, 241, 241);
-  text-decoration: yellow;
-  position: relative;
-}
-
-
-.header-laptop {
-  width: 157%;
-  float: left; 
-  padding-top: 1vh;
-  display: inline;
-}
-
-.header-p {
-  padding-right: 2%;
-  display: block;
-  font-size: 1rem;
-  padding-top: 3%;
-  color: #ffffff;
-}
-
-.header-girls {
-  width: 235%;
-  padding-bottom: 0;
-  position: relative;
-  display: block;
-  float: right;
-  padding-top: 0%;
-  padding-left: 60%;
-}
-
 
