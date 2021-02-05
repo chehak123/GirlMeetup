@@ -1,12 +1,35 @@
 <div class="new-header section-container">
     <div class="container">     
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-6 how-box wow fadeInLeftBig">
+        <div class="col-1 col-md-6 col-lg-6 how-box wow fadeInLeftBig">
           <div class="header-laptop">
-            <img class="img-fluid col-5 col-md-8 col-lg-6" src="image/girl-laptop.png" alt="girl with laptop">
+            <img id="laptop-girl" class="img-fluid col-1 col-md-8 col-lg-6" src="image/girl-laptop.png" alt="girl with laptop">
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 how-us-box">
+
+        <style>
+          @media (max-width: 400px)
+          {
+            .header-p {
+              font-size: 1.5rem;
+            }
+            
+            .new-header-heading {
+              font-size: 3.5rem;
+            }
+            
+            .header-laptop {
+              display: none;
+              width: 0;
+            }
+            
+            #laptop-girl {
+              display: none;
+              width: 0;
+            }
+        </style>
+
+        <div class="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
                 <div class="float-right">
                   <h2 class="new-header-heading  wow fadeInDown"><strong>Girl Meetup, the road ahead</strong></h2>
                   <br>
