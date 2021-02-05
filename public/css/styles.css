@@ -408,9 +408,6 @@ iframe{
     border-bottom: 2px solid white;
   }
   
-  #hero .container {
-    padding-top: 20px;
-  }
   
   #hero .row{
     display: flex;
@@ -1079,6 +1076,7 @@ html {
   border: none;
 }
 
+
 .card-header {
   background-color: #132743;
   border-radius: 5rem;
@@ -1096,13 +1094,13 @@ html {
 
 .card-header .btn-link {
   font-weight: 400;
-  color: #79dc68d6;
+  color: #79dc68d6 !important;
   text-decoration: none;
 }
 
 .card-header .btn-link:hover, .card-header .btn-link:active, .card-header .btn-link:focus {
   font-weight: 500;
-  color: #79DC68;
+  color: #79DC68 !important;
 }
  
 .card-header i {
@@ -1151,3 +1149,62 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+#hero {
+  background-color: #e9ecef;
+  margin-top: 0;
+}
+
+
+
+
+
+/* New Header */
+
+.new-header {
+  padding-top: 5vw;
+  background-color: #79DC68;
+  background-image: linear-gradient(#79DC68,#21d601);
+  padding-bottom: 0%;
+  border-radius: 0 0 120% 17rem;
+
+}
+
+.new-header-heading {
+  margin: 0 auto;
+  font-size: 2.4rem;
+  display: inline;
+  color: #132743;
+  text-shadow: 2px 2px rgb(241, 241, 241);
+  text-decoration: yellow;
+  position: relative;
+}
+
+
+.header-laptop {
+  width: 150%;
+  float: left;
+  
+  padding-top: 1vh;
+  display: inline;
+}
+
+.header-p {
+  padding-right: 2%;
+  display: block;
+  font-size: 1rem;
+  padding-top: 3%;
+  color: #ffffff;
+}
+
+.header-girls {
+  width: 200%;
+  padding-bottom: 0;
+  position: relative;
+  display: block;
+  float: right;
+  padding-top: 3%;
+  padding-left: 90%;
+}
+
+
