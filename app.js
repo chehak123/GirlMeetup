@@ -48,6 +48,12 @@ app.get("/", function(req, res){
 });
 
 //Auth Routes 
+
+app.get("/my-header", (req, res) => {
+  res.render("my-header",{currentUser: req.user});
+});
+
+
 app.get("/login", (req, res) => {
   res.render("/" + "#login_new_user");
 });
