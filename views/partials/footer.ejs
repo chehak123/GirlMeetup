@@ -20,8 +20,8 @@
                     <!-- <li><a class="foot-link">About</a></li> -->
                     <li><a class="foot-link">Scholarship</a></li>
                     <li><a class="foot-link">Mentor</a></li>
-                    <li><a class="foot-link">Blog</a></li>
-                    <li><a class="foot-link">FAQ</a></li>
+                    <li><a class="foot-link" href="/blog_gallery">Blog</a></li>
+                    <li><a class="foot-link" href="/faq">FAQ</a></li>
                     <!-- <li><a class="foot-link">Team</a></li> -->
                     <li><a class="foot-link">Login</a></li>
 
@@ -38,11 +38,11 @@
 
                   <!--Subscription form -->
                     <div class="input-group"></div>
-                    <form action="#" id="subsFrm" method="post">
-                      <input type="email" id="email" placeholder="malala@extraordinary.com" required="">
-                      <input type="text" id="name" placeholder="Gal Gadot" required="">           
+                    <form action="/newsletter" id="subsFrm" method="POST">
+                      <input type="email" name="email" id="email" placeholder="malala@extraordinary.com" required>
+                      <input type="text" name="name" id="name" placeholder="Gal Gadot" required>           
                       <span class="input-group-btn">
-                        <button class="btn btn-default" id="subscribeBtn" value="Subscribe Now" type="button"><i class="fa fa-envelope fa-2x fa-mail" aria-hidden="true"></i></button>
+                        <button class="btn btn-default" id="subscribeBtn" value="Subscribe Now" type="submit"><i class="fa fa-envelope fa-2x fa-mail" aria-hidden="true"></i></button>
                       </span>
                     </form>
                  </p>
