@@ -69,35 +69,26 @@ let observer = new IntersectionObserver(callback);
 observer.observe(target);
 
 /* Homepage Highlights section */
-const prev  = document.querySelector('.prev');
-    const next = document.querySelector('.next');
-
-    const track = document.querySelector('.track');
-
-    let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
-
-    window.addEventListener('resize', () => {
-      carouselWidth = document.querySelector('.carousel-container').offsetWidth;
-    })
-
-    let index = 0;
-
-    next.addEventListener('click', () => {
-      index++;
-      prev.classList.add('show');
-      track.style.transform = `translateX(-${index * carouselWidth}px)`;
-      
-      if (track.offsetWidth - (index * carouselWidth) < carouselWidth) {
-        next.classList.add('hide');
+$('.owl-carousel').owlCarousel({
+  loop:false,
+  margin:10,
+  dots:false,
+  nav:true,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  navText:["<div class='nav-btn prev-slide'><i class='fas fa-chevron-circle-left'></i></div>","<div class='nav-btn next-slide'><i class='fas fa-chevron-circle-right'></i></div>"],
+  stagePadding:50,
+  responsive: {
+      0: {
+          items: 1
+      },
+      600: {
+          items: 3
+      },
+      1000: {
+          items: 5
       }
-    })
-
-    prev.addEventListener('click', () => {
-      index--;
-      next.classList.remove('hide');
-      if (index === 0) {
-        prev.classList.remove('show');
-      }
-      track.style.transform = `translateX(-${index * carouselWidth}px)`;
-    })
+  }
+});
 });
