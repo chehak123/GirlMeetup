@@ -68,6 +68,9 @@ function callback(entries, observer) {
 let observer = new IntersectionObserver(callback);
 observer.observe(target);
 
+
+
+/* Highlights on homepage section */
 $('.owl-carousel').owlCarousel({
   loop:false,
   margin:10,
