@@ -67,3 +67,26 @@ function callback(entries, observer) {
 
 let observer = new IntersectionObserver(callback);
 observer.observe(target);
+
+$('.owl-carousel').owlCarousel({
+  loop:false,
+  margin:10,
+  dots:false,
+  nav:true,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  navText:["<div class='nav-btn prev-slide'><i class='fas fa-chevron-circle-left'></i></div>","<div class='nav-btn next-slide'><i class='fas fa-chevron-circle-right'></i></div>"],
+  stagePadding:50,
+  responsive: {
+      0: {
+          items: 1
+      },
+      600: {
+          items: 3
+      },
+      1000: {
+          items: 5
+      }
+  }
+});
