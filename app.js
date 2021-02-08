@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const passportLocalMongoose = require("passport-local-mongoose");
-const  User = require("./models/user");
+const User = require("./models/user");
 const request = require('request');
 
 //Connecting database
@@ -24,14 +24,14 @@ mongoose.connect(
 
 app.use(
   require("express-session")({
-    secret: "!@#$%^&*()", 
+    secret: "!@#$%^&*()",
     resave: false,
     saveUninitialized: false,
   })
 );
 
 passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser()); 
+passport.deserializeUser(User.deserializeUser());
 passport.use(new LocalStrategy(User.authenticate()));
 
 app.use(express.static("public"));
@@ -42,9 +42,9 @@ app.use(bodyParser.urlencoded({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/", function(req, res){
+app.get("/", function (req, res) {
 
-  res.render("index", {currentUser: req.user});
+  res.render("index", { currentUser: req.user });
 });
 
 //Auth Routes 
@@ -58,12 +58,10 @@ app.post(
     successRedirect: "/",
     failureRedirect: "/" + "#login_failed",
   }),
-  function (req, res) {}
+  function (req, res) { }
 );
 
-app.get("/register", (req, res) => {
-  res.render("/" + "#register_new_user");
-});
+
 
 app.post("/register", (req, res) => {
   User.register(
@@ -78,13 +76,12 @@ app.post("/register", (req, res) => {
         res.render("register");
       }
       passport.authenticate("local")(req, res, function () {
-        console.log(req.baseUrl);
-        res.redirect("/" + "#login_new_user");
+        res.redirect("/");
       });
     }
   );
 
-  res.render("index");
+
 
 });
 
@@ -105,17 +102,17 @@ app.get("/mentor", (req, res) => {
 });
 
 app.get("/faq", (req, res) => {
-  res.render("faq",{currentUser: req.user});
+  res.render("faq", { currentUser: req.user });
 });
 
 
 
 app.get("/blog_gallery", (req, res) => {
-  res.render("blog_gallery",{currentUser: req.user});
+  res.render("blog_gallery", { currentUser: req.user });
 });
 
 app.get("/blog", (req, res) => {
-  res.render("blog",{currentUser: req.user});
+  res.render("blog", { currentUser: req.user });
 });
 
 // app.get("/opportunities", (req, res) => {
@@ -135,14 +132,14 @@ app.get("/divhireother", (req, res) => {
 });
 
 app.get("/success", (req, res) => {
-  res.render("success",{currentUser: req.user});
+  res.render("success", { currentUser: req.user });
 });
 
 app.get("/failure", (req, res) => {
-  res.render("failure",{currentUser: req.user});
+  res.render("failure", { currentUser: req.user });
 });
 
-app.post("/newsletter", (req,res)=> {
+app.post("/newsletter", (req, res) => {
   var Name = req.body.name;
   var Email = req.body.email;
 
@@ -151,7 +148,7 @@ app.post("/newsletter", (req,res)=> {
       {
         email_address: Email,
         status: "subscribed",
-        merge_fields:{
+        merge_fields: {
           FNAME: Name
         }
       }
@@ -161,28 +158,28 @@ app.post("/newsletter", (req,res)=> {
   var jsonData = JSON.stringify(data);
 
   var options = {
-    url : "https://us7.api.mailchimp.com/3.0/lists/836f8723ea",
+    url: "https://us7.api.mailchimp.com/3.0/lists/836f8723ea",
     method: "POST",
     headers: {
-      "Authorization":"Personal 9a289c1e24545e876ec5bc9c62a09ae2-us7"
+      "Authorization": "Personal 9a289c1e24545e876ec5bc9c62a09ae2-us7"
     },
-    body:jsonData
+    body: jsonData
   };
 
-  request(options,(error,response,body)=>{
-    if(error){
+  request(options, (error, response, body) => {
+    if (error) {
       res.redirect('/failure')
     } else {
-      if(response.statusCode === 200){
+      if (response.statusCode === 200) {
         res.redirect('/success');
       } else {
         res.redirect('/failure');
-      }      
+      }
     }
   })
 });
 
-app.listen(port, function() {
+app.listen(port, function () {
   console.log("Server started on port 3000.");
 });
 
