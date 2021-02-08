@@ -1578,8 +1578,7 @@ h6 {
 /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
-#hero {
-  width: 100%;
+
 
   /* height: 100vh; */
   background: white;
@@ -1705,8 +1704,7 @@ h6 {
     text-align: left;
     font-size: 14px;
   }
-  #hero .hero-img img {
-    width: 80%;
+
   }
   #hero .btn-get-started,
   #hero .btn-get-quote {
@@ -1989,12 +1987,8 @@ section {
 /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
-#footer {
-  color: #444444;
-  font-size: 14px;
-  background: #eeeef5;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
+
+ 
 
 #footer .credits {
   padding-top: 5px;
@@ -2021,27 +2015,11 @@ section {
   transition: 0.3s;
 }
 
-#footer .social-links a:hover {
-  background: rgb(84, 151, 84);
-  color: #fff;
-  text-decoration: none;
-}
-
-.covid {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.chat {
-  margin-left: 467px;
-  margin-right: 467px;
-}
-
-/* ****************************** */
 
 body {
   font-family: "Montserrat";
 }
+
 
 .Testi {
   text-align: center;
@@ -2333,6 +2311,63 @@ html {
   margin-top: 0;
 }
 
+
+
+
+
+
+
+
+/* New Header */
+
+ .new-header {
+    padding-top: 5vw;
+    background-color: #79DC68;
+    background-image: linear-gradient(#79DC68,#21d601);
+    padding-bottom: 0%;
+    border-radius: 0 0 120% 20rem;
+    max-height: 70vh;
+  }
+  
+  .new-header-heading {
+    margin: 0 auto;
+    font-size: 2.4rem;
+    display: inline;
+    color: #132743;
+    text-shadow: 2px 2px 3px rgb(241, 241, 241);
+    text-decoration: yellow;
+    position: relative;
+  }
+  
+  
+  .header-laptop {
+    width: 157%;
+    float: left; 
+    padding-top: 1vh;
+    display: inline;
+  }
+  
+  .header-p {
+    padding-right: 2%;
+    display: block;
+    font-size: 1rem;
+    padding-top: 3%;
+    color: #ffffff;
+  }
+    
+  .header-girls {
+    width: 235%;
+    padding-bottom: 0;
+    position: relative;
+    display: block;
+    float: right;
+    padding-top: 0%;
+    padding-left: 60%;
+  }
+
+@media only screen and (max-width: 990px)
+{
+
 /* New Header */
 
 .new-header {
@@ -2380,6 +2415,7 @@ html {
 }
 
 @media only screen and (max-width: 990px) {
+
   .header-p {
     font-size: 1.5rem;
   }
@@ -2398,6 +2434,11 @@ html {
     width: 0;
   }
 }
+
+
+
+/* About section */
+
 
 .about .content h3 {
   font-weight: 600;
@@ -2440,4 +2481,129 @@ html {
     margin: 0 48px 0 0;
     padding: 6px 18px;
   }
+
+} 
+
+
+
+
+
+
+/* Highlights */
+
+
+.owl-carousel {
+  width: 1280px;
+  margin: 50px auto;
+  min-height: 200px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .owl-carousel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .owl-carousel {
+    width: 85%;
+  }
+}
+
+.owl-carousel {
+  overflow: hidden;
+  width: 195px;
+  flex-shrink: 0;
+  height: 322px;
+  padding-right: 15px;
+  margin-bottom: 15%;
+}
+
+.owl-carousel .info {
+  background-color: #132743;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.owl-carousel .info a {
+  color: #79dc68d6;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.owl-carousel .info a:visited,.owl-carousel .info a:hover,.owl-carousel .info a:active,.owl-carousel .info a:focus {
+  color: #79DC68;
+  font-weight: 900;
+}
+
+.owl-carousel img{
+  border: 1px solid #132743;
+}
+
+.owl-carousel {
+  width: 100%;
+  height: 100%;  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.sc-home-img {
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.owl-carousel .item {
+  border-color: #000000;
+  border-width: 2px;
+  padding-left: 18px;
+}
+
+.carousel-wrap h3 {
+  font-size: 2rem;
+  color: #132743;
+  padding-top: 5%;
+  font-weight: 900;
+  padding-left: 5.5%;
+}
+
+
+
+
+.nav-btn {
+  font-size: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  pointer-events: none;
+  color: #0ac735;
+  margin-top: 30% !important;
+  padding-top: 80px !important;
+  transform: translateY(-50%);
+}
+
+.nav-btn .prev-slide {
+  text-decoration: none;
+}
+
+.nav-btn:active, .nav-btn:hover, .nav-btn:focus {
+  text-decoration: none;
+  color: #209c3d;
+  font-weight: 900;
+  border: none;
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    background: #ffffff;
+
 }
