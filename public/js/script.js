@@ -68,9 +68,6 @@ function callback(entries, observer) {
 let observer = new IntersectionObserver(callback);
 observer.observe(target);
 
-
-
-/* Highlights on homepage section */
 $('.owl-carousel').owlCarousel({
   loop:false,
   margin:10,
@@ -92,4 +89,13 @@ $('.owl-carousel').owlCarousel({
           items: 5
       }
   }
+});
+
+
+/* Search bar */
+const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+searchButton.addEventListener('click', () => {
+  const inputValue = searchInput.value;
+  alert(inputValue);
 });
