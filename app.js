@@ -100,17 +100,15 @@ function isLoggedIn(req, res, next) {
   res.redirect("/" + "#login");
 }
 
-app.get("/faq", (req, res) => {
-  res.render("faq",{currentUser: req.user});
-});
-
 app.get("/mentor", (req, res) => {
   res.render("mentor",{currentUser: req.user});
 });
 
-app.get("/scholarship", (req, res) => {
-  res.render("scholarship",{currentUser: req.user});
+app.get("/faq", (req, res) => {
+  res.render("faq",{currentUser: req.user});
 });
+
+
 
 app.get("/blog_gallery", (req, res) => {
   res.render("blog_gallery",{currentUser: req.user});
@@ -118,6 +116,22 @@ app.get("/blog_gallery", (req, res) => {
 
 app.get("/blog", (req, res) => {
   res.render("blog",{currentUser: req.user});
+});
+
+app.get("/opportunities", (req, res) => {
+  res.render("opportunities",{currentUser: req.user});
+});
+
+app.get("/scholarships", (req, res) => {
+  res.render("scholarships",{currentUser: req.user});
+});
+
+app.get("/hackcon", (req, res) => {
+  res.render("hackcon",{currentUser: req.user});
+});
+
+app.get("/divhireother", (req, res) => {
+  res.render("divhireother",{currentUser: req.user});
 });
 
 app.get("/success", (req, res) => {

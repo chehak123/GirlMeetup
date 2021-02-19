@@ -1,0 +1,249 @@
+<%- include('partials/header') %>
+
+<%- include('partials/modal_form') %>
+
+<!--<%- include('partials/header-all.ejs') %>-->
+
+<style>
+  .heads {
+background: url();
+text-align: center;
+width: 100%;
+height: auto;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+overflow: hidden;
+border-radius: -1 0 85% 85% / 92%;
+}
+.overlay{
+width: 100%;
+height: 50%;
+color: #FFF;
+text-shadow: 1px 1px 1px black;
+background-image:linear-gradient(to right,  rgba(66, 65, 65, 0.73), rgba(163, 163, 163, 0.73)),
+  url("https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVudG9yc2hpcHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+background-position: 50% 60%;
+}
+</style>
+
+
+<div  class="heads overlay" style="background-color: rgb(243, 243, 243); padding: 10px; margin-top: 65px;">
+  <h2 style="padding: 80px; font-family: 'Sarina', cursive;">We are here for you</h2>
+  <p style="font-size: 25px;margin-top: -71px;text-align: center; font-family: 'Sarina', cursive;">Let's go do it!</p>
+ 
+</div>
+
+<!-- ======= Toast UI ====== -->
+<%- include('partials/toast') %>
+
+<!-- Opportunities section -->
+
+<style>
+  @media screen and (max-width:400px)
+{
+  .input-group .form-outline {
+    width: 70%;
+  }
+
+  .card {
+    display: block;
+    width: 90%;
+  }
+}
+</style>
+
+
+<div class="input-group">
+    <div class="form-outline">
+      <input id="search-input" type="search" placeholder="Search Opportunities!" id="form1" class="form-control" />
+    </div>
+    <button id="search-button" type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+
+
+<!-- Hackathons and Contests -->
+
+<div class="container card-container">
+    <div class="text-left">
+      <h2>Hackathons and Contests</h2>
+      <br>
+    </div>
+    <div class="container">
+      <div class="card-columns">
+        <div class="card school">
+        <a href="https://technovationchallenge.org">
+        <img class="card-img-top" src="https://opportunitydesk.org/wp-content/uploads/2019/10/Technovation-Girls.png" alt="Technovation Competition">
+          <div class="card-body">
+            <h5 class="card-title">Technovation Competition</h5>
+            <p class="card-text">
+              <strong>About</strong>:- Girls, or anybody on the spectrum who identifies female, can take part. Here, participants find a problem in their community and build a mobile app to help solve it over 30+ hours.<br>
+              <strong>Awards</strong>:- $20,000 in awards for 12 finalist teams of upto 5 members, invitation to Technovation's World Summit
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Technovation Girls<br><i class="fas fa-calendar-alt"></i> August</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card ug school">
+        <a href="https://codingcompetitions.withgoogle.com/codejamio">
+        <img class="card-img-top" src="https://codeforces.com/predownloaded/ff/03/ff034d9026b9f47b4eeb6d5fdfae80d197c6d383.png" alt="Code Jam to I/O">
+          <div class="card-body">
+            <h5 class="card-title">Code Jam to I/O</h5>
+            <p class="card-text">
+              <strong>About</strong>:- 2.5 hour, single-round algorithmic coding competition for girls (students and professionals) as part of Google's diversity program. <br>
+              <strong>Awards</strong>:- Top 150 will receive a ticket and reimbursement to offset travel expenses to Google I/O.
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Google<br><i class="fas fa-calendar-alt"></i> February</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card school junior">
+        <a href="https://www.engineergirl.org/128750/EngineerGirl-Writing-Contest">
+        <img class="card-img-top" src="https://www.engineergirl.org/File.aspx?id=132414" alt="EngineerGirl’s Egirl Essay Contest">
+          <div class="card-body">
+            <h5 class="card-title">EngineerGirl Writing Contest</h5>
+            <p class="card-text">
+              <strong>About</strong>:- STEM themed Essay writing contest for students in elementary school (grades 3-5), middle school (grades 6-8) or high school (grades 9-12). <br>
+              <strong>Awards</strong>:- $500, $250, $100. Honorary entries are also published.
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> National Academy of Engineering<br><i class="fas fa-calendar-alt"></i> February</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card school ug pg">
+        <a href="https://practice.geeksforgeeks.org/contest/coderita">
+        <img class="card-img-top" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200229225923/Coderita-Online-Coding-Competition-For-Women-By-GeeksforGeeks.jpg" alt="Coderita">
+          <div class="card-body">
+            <h5 class="card-title">Coderita</h5>
+            <p class="card-text">
+              <strong>About</strong>:- Online coding contest for women who turn problems into programs, non-profit initiative to bridge the prevailing gender gap in tech industry. <br>
+              <strong>Awards</strong>:- Amazon vouchers worth up to INR 8,000 + discount coupons worth up to INR 26,000 + more goodies.
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Geeks For Geeks<br><i class="fas fa-calendar-alt"></i> March</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card college ug pg">
+        <a href="https://www.techgig.com/geekgoddess">
+        <img class="card-img-top" src="https://content.techgig.com/photo/71564591/techgig-geek-goddess-2019-will-pick-the-best-women-coders.jpg" alt="TechGig Geek Goddess">
+          <div class="card-body">
+            <h5 class="card-title">TechGig Geek Goddess</h5>
+            <p class="card-text">
+              <strong>About</strong>:- Hackathon across themes like AI/ ML, (RPA), Cloudify Everything and Solution Hunters among others. Sponsors themselves provide problem statements. <br>
+              <strong>Awards</strong>:- Up to INR 1,50,000, in cash prizes.
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Tech Gig<br><i class="fas fa-calendar-alt"></i> August</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card college ug pg">
+        <a href="https://www.hackerearth.com/challenges/hackathon">
+        <img class="card-img-top" src="https://media-fastly.hackerearth.com/media/hackathon/wonder-coders/images/a210472415-1._walmart_he_cover1-01.jpg" alt="Wonder Coders">
+          <div class="card-body">
+            <h5 class="card-title">Wonder Coders</h5>
+            <p class="card-text">
+              <strong>About</strong>:- Hackfest exclusively for women based on following themes: health and fitness, wearables (IOT), Travel, social, reinventing retail.<br>
+              <strong>Awards</strong>:- Top three teams win Rs 1,00,000/- each
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Walmart Labs India<br><i class="fas fa-calendar-alt"></i> March</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card college ug pg">
+        <a href="https://www.hackerrank.com/adobe-codiva/">
+        <img class="card-img-top" src="https://www.firstnaukri.com/careers/customised/landingpage/adobe/codiva/images/banner-new-3.jpg" alt="Adobe CODIVA">
+          <div class="card-body">
+            <h5 class="card-title">Adobe CODIVA</h5>
+            <p class="card-text">
+              <strong>About</strong>:- 4-hour contest on algorithmic programming challenges, where the top candidates get to interview for intern/ full time roles at Adobe.<br>
+              <strong>Awards</strong>:- Electronics + Gift vouchers + T-shirts (and interviews, based on eligibility)
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Adobe<br><i class="fas fa-calendar-alt"></i> March</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card college ug pg">
+        <a href="https://wintathon2020.splashthat.com">
+        <img class="card-img-top" src="https://www.hrkatha.com/wp-content/uploads/2017/11/73ea288207e8d120e20bc02dca78719e-324x160.jpg" alt="Wintathon">
+          <div class="card-body">
+            <h5 class="card-title">Wintathon</h5>
+            <p class="card-text">
+              <strong>About</strong>:- All-female Hackathon that runs for 24 hours, where participants have the chance to build an awesome product by leveraging the tools available (Javascript, HTML, CSS, Java, etc.)<br>
+              <strong>Awards</strong>:- Internship with LinkedIn Bangalore for winner + Exciting prizes + LinkedIn SWAGS 
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> LinkedIn<br><i class="fas fa-calendar-alt"></i> November</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card college ug pg">
+        <a href="https://wmn.community">
+        <img class="card-img-top" src="https://miro.medium.com/max/3200/1*4hbO0bvbEKZwzizd2Er0WQ.jpeg" alt="wmn">
+          <div class="card-body">
+            <h5 class="card-title">wmn</h5>
+            <p class="card-text">
+              <strong>About</strong>:- India's largest women only hackathon with a time-limit of 24 hours where there are amazing mentors to guide and help participants.<br>
+              <strong>Awards</strong>:- SWAGS + Entire stay, fooding, lodging sponsored + Tech talks (Travels are also reimbursed on need basis).
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Devfolio<br><i class="fas fa-calendar-alt"></i> May</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card college ug pg">
+        <a href="https://challengerocket.com/anitasmoonshot">
+        <img class="card-img-top" src="https://i.ytimg.com/vi/84UdT_4gZqg/maxresdefault.jpg" alt="Anita’s Moonshot Codeathon">
+          <div class="card-body">
+            <h5 class="card-title">Anita’s Moonshot Codeathon</h5>
+            <p class="card-text">
+              <strong>About</strong>:- Online codeathon to bring women from interdisciplinary backgrounds to produce a creative solution to some socio-cultural or socio-economic problem.<br>
+              <strong>Awards</strong>:- $10,500 for a team of 5 members + Full Scholarships to Grace Hopper Celebration
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Systers<br><i class="fas fa-calendar-alt"></i> December</small></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card college ug pg">
+        <a href="https://athenahacks.com">
+        <img class="card-img-top" src="https://miro.medium.com/max/1052/1*8yPhBq1zboshBauZHXhEog.png" alt="AthenaHacks">
+          <div class="card-body">
+            <h5 class="card-title">AthenaHacks</h5>
+            <p class="card-text">
+              <strong>About</strong>:- Weekend filled with learning, exploring and building new friendships and amazing projects, all-female codeathon with open and supportive environment for beginners or experienced hackers.<br>
+              <strong>Awards</strong>:- SWAG
+            </p>
+            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Southern California<br><i class="fas fa-calendar-alt"></i> February</small></p>
+        </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<%- include('partials/footer') %>
+
+
+<script type="text/javascript">
+    /* Search bar */
+      const searchButton = document.getElementById('search-button');
+      const searchInput = document.getElementById('search-input');
+      searchButton.addEventListener('click', () => {
+        const inputValue = searchInput.value;
+        alert(inputValue);
+      });
+
+  </script>

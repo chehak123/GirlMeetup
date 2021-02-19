@@ -1,0 +1,520 @@
+<%- include('partials/header') %>
+
+<%- include('partials/modal_form') %>
+
+<style>
+  .heads {
+background: url();
+text-align: center;
+width: 100%;
+height: auto;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+overflow: hidden;
+border-radius: -1 0 85% 85% / 92%;
+}
+.overlay{
+width: 100%;
+height: 50%;
+color: #FFF;
+text-shadow: 1px 1px 1px black;
+background-image:linear-gradient(to right,  rgba(66, 65, 65, 0.73), rgba(163, 163, 163, 0.73)),
+  url("https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVudG9yc2hpcHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+background-position: 50% 60%;
+}
+</style>
+
+
+<div  class="heads overlay" style="background-color: rgb(243, 243, 243); padding: 10px; margin-top: 65px;">
+  <h2 style="padding: 80px; font-family: 'Sarina', cursive;">We are here for you</h2>
+  <p style="font-size: 25px;margin-top: -71px;text-align: center; font-family: 'Sarina', cursive;">Let's go do it!</p>
+ 
+</div>
+
+<!-- ======= Toast UI ====== -->
+<%- include('partials/toast') %>
+
+<!-- Opportunities section -->
+
+<style>
+  @media screen and (max-width:400px)
+{
+  .input-group .form-outline {
+    width: 70%;
+  }
+
+  .card {
+    display: block;
+    width: 90%;
+  }
+}
+</style>
+
+
+<div class="input-group">
+    <div class="form-outline">
+      <input id="search-input" type="search" placeholder="Search Opportunities!" id="form1" class="form-control" />
+    </div>
+    <button id="search-button" type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+
+    <!-- Scholarships section -->
+    <div class="container card-container">
+      <div class="text-left">
+        <h2>Scholarships</h2>
+        <br>
+      </div>
+      <div class="container">
+        <div class="card-columns">
+          <div class="card mb-4 ug">
+            <a href="https://www.santoorscholarships.com">
+            <img class="card-img-top" src="https://www.noticebard.com/wp-content/uploads/2018/06/Santoor-Womens-Scholarship-2018.png" alt="Santoor Women's Scholarship">
+              <div class="card-body">
+                <h5 class="card-title">Santoor Women's Scholarship</h5>
+                <p class="card-text">
+                  <strong>Eligibility</strong>:- Girls who have passed class 10 from a local government school and class 12 from a government school/ junior college and is enrolled in  full-time graduate program.<br>
+                  <strong>Amount</strong>:- INR 24,000 p.a. till completion of study (Andhra Pradesh, Karnataka and Telangana) in government institute.
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Wipro Consumer Care, Wipro Cares<br><i class="fas fa-calendar-alt"></i> October</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card mb-4 pg other">
+            <a href="http://online-wosa.gov.in/wosb/">
+            <img class="card-img-top" src="https://www.indiafilings.com/learn/wp-content/uploads/2019/08/KIRAN-Women-Scientist-Scheme-B.jpg" alt="Women Scientist Scheme-B (WOS-B)">
+            <div class="card-body">
+              <h5 class="card-title">Women Scientist Scheme-B (WOS-B)</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Women scientists or technologists with qualifications in science and technology in the age group of 27-57 years who are taking a break in their career.<br>
+                <strong>Amount</strong>:- INR 55,000 per month for PhD or equivalent + HRA and Overheads, INR 40,000 per month for MPhil/MTech or equivalent +HRA and Overheads, INR 31,000 per month for MSc or equivalent + HRA and Overheads.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> DST, Government of India<br><i class="fas fa-calendar-alt"></i> February</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card mb-4 pg">
+            <a href="https://www.ugc.ac.in/sgc/">
+            <img class="card-img-top" src="https://cdn.webexam.in/wp-content/uploads/2020/11/Indira-Gandhi-Single-Girl-Child-Scholarship.jpg" alt="Post-Graduate Indira Gandhi Scholarship for Single Girl Child">
+            <div class="card-body">
+              <h5 class="card-title">Post-Graduate Indira Gandhi Scholarship for Single Girl Child</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Girl students pursuing PG courses who are the only child of their parents. They should be on their first year of study.<br>
+                <strong>Amount</strong>:- INR 36,200 p.a. for 2 years
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> UGC<br><i class="fas fa-calendar-alt"></i> December</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug">
+            <a href="https://www.loreal.com/en/india/articles/commitments/the-india-for-young-women-in-science-scholarship-programme/">
+            <img class="card-img-top" src="https://cdn.webexam.in/wp-content/uploads/2018/03/LOréal-India-For-Young-Women-In-Science-Scholarships.jpg" alt="L’Oréal India Scholarship">
+            <div class="card-body">
+              <h5 class="card-title">L’Oréal India Scholarship</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Meritorious class 12 passed girls (upto age 19) who wish to pursue a STEM career with at least 85% marks in PCM/ PCB from financially backward banckgrounds.<br>
+                <strong>Amount</strong>:- Scholarship up to INR 2.5 lacs 
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> L’Oréal India<br><i class="fas fa-calendar-alt"></i> June</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug school">
+            <a href="https://www.technipfmc.com">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/archive/7/7b/20181229060429%21TechnipFMC_PLC_Logo.jpg" alt="Technip India Limited Scholarship Program">
+            <div class="card-body">
+              <h5 class="card-title">Technip India Limited Scholarship Program</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Female students of Chennai, Mumbai, and Delhi who wish to pursue a career in STEM. Students enrolled in class 11 (science) or in 3rd year of any Engineering (BE) programme<br>
+                <strong>Amount</strong>:- INR 20,000 per annum (one time, fixed)
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Technip India Limited<br><i class="fas fa-calendar-alt"></i> October</small></p>
+            </div>
+            </a>
+          </div>
+
+          
+          <div class="card ug pg">
+            <a href="https://www.glowandlovelycareers.in/en/scholarship-for-women">
+            <img class="card-img-top" src="https://lifeandtrendz.com/wp-content/uploads/2016/04/Lara-Dutta-felicitating-scholarship-winners-at-Fair-Lovely-Foundation-..._3.jpg" alt="Glow & Lovely Scholarship">
+            <div class="card-body">
+              <h5 class="card-title">Glow & Lovely Scholarship</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- College-going females pursuing UG or PG from a government-recognised Indian university/ institution. A total 55 studentss are selected<br>
+                <strong>Amount</strong>:- INR 25,000- INR 50,000 (fixed, one-time award)
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Glow & Lovely<br><i class="fas fa-calendar-alt"></i> September</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug">
+            <a href="https://www.buddy4study.com/page/rolls-royce-unnati-scholarships-for-women-engineering-students">
+            <img class="card-img-top" src="https://www.simplifiedshiksha.com/wp-content/uploads/2020/02/Unnatic-scholaship.jpg" alt="Rolls-Royce Unnati Scholarships for Women Engineering Students">
+            <div class="card-body">
+              <h5 class="card-title">Rolls-Royce Unnati Scholarships for Women Engineering Students</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- 1st/ 2nd/ 3rd year meritorious girl students incompleting their engineering programme at an AICTE recognized institution in India as their financial support.<br>
+                <strong>Amount</strong>:- INR 35,000
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Rolls-Royce India Private Limited<br><i class="fas fa-calendar-alt"></i> April</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug">
+            <a href="https://www.sashaktscholarship.org">
+            <img class="card-img-top" src="https://www.yosearch.net/wp-content/uploads/2020/04/dr-reddys-foundation-sashakt-scholarship.jpg" alt="Dr. Reddy’s Foundation Sashakt Scholarship">
+            <div class="card-body">
+              <h5 class="card-title">Dr. Reddy’s Foundation Sashakt Scholarship</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Given for 3 years of UG STEM study to girl students coming from rural and backward socio-economic backgrounds.<br>
+                <strong>Amount</strong>:- INR 240,000
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Dr Reddy’s Foundation, Hyderabad<br><i class="fas fa-calendar-alt"></i> August</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug">
+            <a href="https://www.aicte-pragati-saksham-gov.in">
+            <img class="card-img-top" src="https://aisee.co.in/scholarship/wp-content/uploads/2019/09/AICTE-Pragati-Scholarship-for-Girls-2019.jpg" alt="AICTE Pragati Scholarship for Girls">
+            <div class="card-body">
+              <h5 class="card-title">AICTE Pragati Scholarship for Girls</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Total 5,000 girl students studying in the first year of a technical diploma/ degree course at an AICTE recognised institution receive this, on the basis of 10+2/equivalent examination.<br>
+                <strong>Amount</strong>:- Up to INR 50,000 p.a. every year + Other benefits
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> AICTE<br><i class="fas fa-calendar-alt"></i> September</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug">
+            <a href="https://www.vidyasaarathi.co.in/Vidyasaarathi/scholarship#">
+            <img class="card-img-top" src="https://bharatstories.com/wp-content/uploads/2020/12/Tata-Housing-Scholarships-1200x675.jpg" alt="Tata Housing Scholarships">
+            <div class="card-body">
+              <h5 class="card-title">Tata Housing Scholarships</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Studying in 2nd year of B.Tech/B.E/B.Arch of Civil Engineering/ Architecture course at a recognized institute or university.<br>
+                <strong>Amount</strong>:- Upto INR 60000/- towards payment of Tuition Fee, Admission Fee, Library Fee, Exam Fee, Book Purchase.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Tata Housing<br><i class="fas fa-calendar-alt"></i> December</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug">
+            <a href="https://research.adobe.com/adobe-india-women-in-technology-scholarship/">
+            <img class="card-img-top" src="https://miro.medium.com/max/773/0*p9CLXOMYf_QgaHMB.jpg" alt="Adobe India Women-in-Technology Scholarship">
+            <div class="card-body">
+              <h5 class="card-title">Adobe India Women-in-Technology Scholarship</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- Must be enrolled as full time student in a formal technology 4 year BE / B.Tech education program or an Integrated ME/MS/MTech program at an Indian University or Institute. <br>
+                <strong>Amount</strong>:- Fund toward remainder of recipient’s university education tuition fees ending in academic year + Summer Internship at Adobe India in 2021 + Mentorship + Travel to GHC India, including participation fees.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Adobe India<br><i class="fas fa-calendar-alt"></i> August</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug">
+            <a href="https://ghc.anitab.org/attend/scholarships/">
+            <img class="card-img-top" src="https://ghc.anitab.org/wp-content/uploads/2020/01/ghc-19-scholars.jpg" alt="vGHC SCHOLARSHIPS">
+            <div class="card-body">
+              <h5 class="card-title">vGHC SCHOLARSHIPS</h5>
+              <p class="card-text">
+                <strong>Eligibility</strong>:- vGHC invites students from high school, college and university- they must be able to demonstrate relevant experience and interest in technology.<br>
+                <strong>Amount</strong>:- Roundtrip airfare + stipend + registration fees + hotel charges
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> AnitaB.org<br><i class="fas fa-calendar-alt"></i> March</small></p>
+            </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Hackathons and Contests -->
+
+    <div class="container card-container">
+        <div class="text-left">
+          <h2>Hackathons and Contests</h2>
+          <br>
+        </div>
+        <div class="container">
+          <div class="card-columns">
+            <div class="card school">
+            <a href="https://technovationchallenge.org">
+            <img class="card-img-top" src="https://opportunitydesk.org/wp-content/uploads/2019/10/Technovation-Girls.png" alt="Technovation Competition">
+              <div class="card-body">
+                <h5 class="card-title">Technovation Competition</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- Girls, or anybody on the spectrum who identifies female, can take part. Here, participants find a problem in their community and build a mobile app to help solve it over 30+ hours.<br>
+                  <strong>Awards</strong>:- $20,000 in awards for 12 finalist teams of upto 5 members, invitation to Technovation's World Summit
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Technovation Girls<br><i class="fas fa-calendar-alt"></i> August</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card ug school">
+            <a href="https://codingcompetitions.withgoogle.com/codejamio">
+            <img class="card-img-top" src="https://codeforces.com/predownloaded/ff/03/ff034d9026b9f47b4eeb6d5fdfae80d197c6d383.png" alt="Code Jam to I/O">
+              <div class="card-body">
+                <h5 class="card-title">Code Jam to I/O</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- 2.5 hour, single-round algorithmic coding competition for girls (students and professionals) as part of Google's diversity program. <br>
+                  <strong>Awards</strong>:- Top 150 will receive a ticket and reimbursement to offset travel expenses to Google I/O.
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Google<br><i class="fas fa-calendar-alt"></i> February</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card school junior">
+            <a href="https://www.engineergirl.org/128750/EngineerGirl-Writing-Contest">
+            <img class="card-img-top" src="https://www.engineergirl.org/File.aspx?id=132414" alt="EngineerGirl’s Egirl Essay Contest">
+              <div class="card-body">
+                <h5 class="card-title">EngineerGirl Writing Contest</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- STEM themed Essay writing contest for students in elementary school (grades 3-5), middle school (grades 6-8) or high school (grades 9-12). <br>
+                  <strong>Awards</strong>:- $500, $250, $100. Honorary entries are also published.
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> National Academy of Engineering<br><i class="fas fa-calendar-alt"></i> February</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card school ug pg">
+            <a href="https://practice.geeksforgeeks.org/contest/coderita">
+            <img class="card-img-top" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200229225923/Coderita-Online-Coding-Competition-For-Women-By-GeeksforGeeks.jpg" alt="Coderita">
+              <div class="card-body">
+                <h5 class="card-title">Coderita</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- Online coding contest for women who turn problems into programs, non-profit initiative to bridge the prevailing gender gap in tech industry. <br>
+                  <strong>Awards</strong>:- Amazon vouchers worth up to INR 8,000 + discount coupons worth up to INR 26,000 + more goodies.
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Geeks For Geeks<br><i class="fas fa-calendar-alt"></i> March</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card college ug pg">
+            <a href="https://www.techgig.com/geekgoddess">
+            <img class="card-img-top" src="https://content.techgig.com/photo/71564591/techgig-geek-goddess-2019-will-pick-the-best-women-coders.jpg" alt="TechGig Geek Goddess">
+              <div class="card-body">
+                <h5 class="card-title">TechGig Geek Goddess</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- Hackathon across themes like AI/ ML, (RPA), Cloudify Everything and Solution Hunters among others. Sponsors themselves provide problem statements. <br>
+                  <strong>Awards</strong>:- Up to INR 1,50,000, in cash prizes.
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Tech Gig<br><i class="fas fa-calendar-alt"></i> August</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card college ug pg">
+            <a href="https://www.hackerearth.com/challenges/hackathon">
+            <img class="card-img-top" src="https://media-fastly.hackerearth.com/media/hackathon/wonder-coders/images/a210472415-1._walmart_he_cover1-01.jpg" alt="Wonder Coders">
+              <div class="card-body">
+                <h5 class="card-title">Wonder Coders</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- Hackfest exclusively for women based on following themes: health and fitness, wearables (IOT), Travel, social, reinventing retail.<br>
+                  <strong>Awards</strong>:- Top three teams win Rs 1,00,000/- each
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Walmart Labs India<br><i class="fas fa-calendar-alt"></i> March</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card college ug pg">
+            <a href="https://www.hackerrank.com/adobe-codiva/">
+            <img class="card-img-top" src="https://www.firstnaukri.com/careers/customised/landingpage/adobe/codiva/images/banner-new-3.jpg" alt="Adobe CODIVA">
+              <div class="card-body">
+                <h5 class="card-title">Adobe CODIVA</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- 4-hour contest on algorithmic programming challenges, where the top candidates get to interview for intern/ full time roles at Adobe.<br>
+                  <strong>Awards</strong>:- Electronics + Gift vouchers + T-shirts (and interviews, based on eligibility)
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Adobe<br><i class="fas fa-calendar-alt"></i> March</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card college ug pg">
+            <a href="https://wintathon2020.splashthat.com">
+            <img class="card-img-top" src="https://www.hrkatha.com/wp-content/uploads/2017/11/73ea288207e8d120e20bc02dca78719e-324x160.jpg" alt="Wintathon">
+              <div class="card-body">
+                <h5 class="card-title">Wintathon</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- All-female Hackathon that runs for 24 hours, where participants have the chance to build an awesome product by leveraging the tools available (Javascript, HTML, CSS, Java, etc.)<br>
+                  <strong>Awards</strong>:- Internship with LinkedIn Bangalore for winner + Exciting prizes + LinkedIn SWAGS 
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> LinkedIn<br><i class="fas fa-calendar-alt"></i> November</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card college ug pg">
+            <a href="https://wmn.community">
+            <img class="card-img-top" src="https://miro.medium.com/max/3200/1*4hbO0bvbEKZwzizd2Er0WQ.jpeg" alt="wmn">
+              <div class="card-body">
+                <h5 class="card-title">wmn</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- India's largest women only hackathon with a time-limit of 24 hours where there are amazing mentors to guide and help participants.<br>
+                  <strong>Awards</strong>:- SWAGS + Entire stay, fooding, lodging sponsored + Tech talks (Travels are also reimbursed on need basis).
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Devfolio<br><i class="fas fa-calendar-alt"></i> May</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card college ug pg">
+            <a href="https://challengerocket.com/anitasmoonshot">
+            <img class="card-img-top" src="https://i.ytimg.com/vi/84UdT_4gZqg/maxresdefault.jpg" alt="Anita’s Moonshot Codeathon">
+              <div class="card-body">
+                <h5 class="card-title">Anita’s Moonshot Codeathon</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- Online codeathon to bring women from interdisciplinary backgrounds to produce a creative solution to some socio-cultural or socio-economic problem.<br>
+                  <strong>Awards</strong>:- $10,500 for a team of 5 members + Full Scholarships to Grace Hopper Celebration
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Systers<br><i class="fas fa-calendar-alt"></i> December</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card college ug pg">
+            <a href="https://athenahacks.com">
+            <img class="card-img-top" src="https://miro.medium.com/max/1052/1*8yPhBq1zboshBauZHXhEog.png" alt="AthenaHacks">
+              <div class="card-body">
+                <h5 class="card-title">AthenaHacks</h5>
+                <p class="card-text">
+                  <strong>About</strong>:- Weekend filled with learning, exploring and building new friendships and amazing projects, all-female codeathon with open and supportive environment for beginners or experienced hackers.<br>
+                  <strong>Awards</strong>:- SWAG
+                </p>
+                <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Southern California<br><i class="fas fa-calendar-alt"></i> February</small></p>
+            </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <!-- Other hiring challenges -->
+      <div class="container card-container">
+        <div class="text-left">
+          <h2>Diversity Hiring & Other Opportunities</h2>
+          <br>
+        </div>
+        <div class="container">
+          <div class="card-columns">
+            <div class="card ug">
+              <a href="https://www.codess.net">
+              <img class="card-img-top" src="https://icdesign.co.uk/media/2373/microsoft-branding-graphics-03.jpg?anchor=center&mode=crop&width=720&height=480&rnd=131858927567400000;" alt="Codess">
+                <div class="card-body">
+                  <h5 class="card-title">Codess</h5>
+                  <p class="card-text">
+                    <strong>What?</strong>:- Global platform by Microsoft to encourage women in the field of technology, two day long session with ideathon, tech talks and teamwork.<br>
+                    <strong>Perks</strong>:- Internship Offers for the best performers + Mentorship offers for all.
+                  </p>
+                  <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Microsoft<br><i class="fas fa-calendar-alt"></i> February</small></p>
+              </div>
+              </a>
+            </div>
+
+            <div class="card ug">
+              <a href="https://womenoftheworld.mettl.com">
+              <img class="card-img-top" src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/8/28/w900X450/ap_-_be_funkdy_1.jpg" alt="Amazon WOW">
+                <div class="card-body">
+                  <h5 class="card-title">Amazon WOW</h5>
+                  <p class="card-text">
+                    <strong>What?</strong>:- Diversity hiring for only SDE I roles, through online coding test, several rounds of technical interviews and HR interview round.<br>
+                    <strong>Perks</strong>:- SDE I Internship Offers amd Full-time fresher Offers for successful candidates.
+                  </p>
+                  <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Amazon<br><i class="fas fa-calendar-alt"></i> January</small></p>
+              </div>
+              </a>
+            </div>
+
+            <div class="card ug">
+              <a href="https://assessment.hackerearth.com/challenges/hiring/bny-mellon-code-divas/">
+              <img class="card-img-top" src="https://he-s3.s3.amazonaws.com/media/cache/36/43/364371048ccaca23bfeb2221941bf259.png" alt="Amazon WOW">
+                <div class="card-body">
+                  <h5 class="card-title">Code Divas Diversity Challenge</h5>
+                  <p class="card-text">
+                    <strong>What?</strong>:- Diversity hiring for software engineering roles at the BNY Mellon Bank, coding challenge at Hackerearth for drawing the leaderboard.<br>
+                    <strong>Perks</strong>:- Full time & Summer Internship Opportunities + Exciting prizes for Top 3 winners!
+                  </p>
+                  <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> BNY Mellon<br><i class="fas fa-calendar-alt"></i> February</small></p>
+              </div>
+              </a>
+            </div>
+
+            <div class="card school">
+              <a href="https://www.microsoft.com/en-us/diversity/programs/digigirlz/default.aspx">
+              <img class="card-img-top" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE239BI?ver=dfb3&q=90&m=6&h=328&w=582&b=%23FFFFFFFF&l=f&o=t&x=1059&y=467&aim=true" alt="DigiGirlz">
+                <div class="card-body">
+                  <h5 class="card-title">DigiGirlz</h5>
+                  <p class="card-text">
+                    <strong>What?</strong>:- Programs to give Middle School/ Junior School and High School/ Secondary School (Ages 14-18) girls opportunities to learn about careers in technology, connect with Microsoft employees and participate in hands-on computer and technology workshops.<br>
+                    <strong>Perks</strong>:- Career planning assistance + information about technology and business roles + thought-provoking exercises + Microsoft product demonstrations + Developing cutting-edge technology.
+                  </p>
+                  <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Microsoft<br><i class="fas fa-calendar-alt"></i> Varying (check <a href="https://digigirlzevents.microsoftcrmportals.com/home">here</a>)</small></p>
+              </div>
+              </a>
+            </div>
+
+            <div class="card school">
+              <a href="https://www.ibm.org/initiatives/stemforgirls">
+              <img class="card-img-top" src="https://i.ytimg.com/vi/YdmUET2bM_0/maxresdefault.jpg" alt="Stem For Girls">
+                <div class="card-body">
+                  <h5 class="card-title">Stem For Girls</h5>
+                  <p class="card-text">
+                    <strong>What?</strong>:- Initiative by IBM in India to improve education and career pathways for girls in middle and higher secondary schools in India to focus on computing skills, STEM learning, and gender empowerment.<br>
+                    <strong>Perks</strong>:- Teaching technical skills + Career planning + Life skills + Ecosystem enablement
+                  </p>
+                  <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> IBM<br><i class="fas fa-calendar-alt"></i> Varying (check official page)</small></p>
+              </div>
+              </a>
+            </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+<%- include('partials/footer') %>
+
+
+<script type="text/javascript">
+    /* Search bar */
+      const searchButton = document.getElementById('search-button');
+      const searchInput = document.getElementById('search-input');
+      searchButton.addEventListener('click', () => {
+        const inputValue = searchInput.value;
+        alert(inputValue);
+      });
+
+  </script>
