@@ -122,6 +122,18 @@ app.get("/opportunities", (req, res) => {
   res.render("opportunities",{currentUser: req.user});
 });
 
+app.get("/scholarships", (req, res) => {
+  res.render("scholarships",{currentUser: req.user});
+});
+
+app.get("/hackcon", (req, res) => {
+  res.render("hackcon",{currentUser: req.user});
+});
+
+app.get("/divhireother", (req, res) => {
+  res.render("divhireother",{currentUser: req.user});
+});
+
 app.get("/success", (req, res) => {
   res.render("success",{currentUser: req.user});
 });
