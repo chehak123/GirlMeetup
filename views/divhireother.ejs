@@ -1,0 +1,140 @@
+<%- include('partials/header') %>
+
+<%- include('partials/modal_form') %>
+
+<%- include('partials/header-all.ejs') %>
+
+<!-- ======= Toast UI ====== -->
+<%- include('partials/toast') %>
+
+<!-- Opportunities section -->
+
+<style>
+  @media screen and (max-width:400px)
+{
+  .input-group .form-outline {
+    width: 70%;
+  }
+
+  .card {
+    display: block;
+    width: 90%;
+  }
+}
+</style>
+
+
+<div class="input-group">
+    <div class="form-outline">
+      <input id="search-input" type="search" placeholder="Search Opportunities!" id="form1" class="form-control" />
+    </div>
+    <button id="search-button" type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+</div>
+
+
+
+<!-- Other hiring challenges -->
+<div class="container card-container">
+    <div class="text-left">
+      <h2>Diversity Hiring & Other Opportunities</h2>
+      <br>
+    </div>
+    <div class="container">
+      <div class="card-columns">
+        <div class="card ug">
+          <a href="https://www.codess.net">
+          <img class="card-img-top" src="https://icdesign.co.uk/media/2373/microsoft-branding-graphics-03.jpg?anchor=center&mode=crop&width=720&height=480&rnd=131858927567400000;" alt="Codess">
+            <div class="card-body">
+              <h5 class="card-title">Codess</h5>
+              <p class="card-text">
+                <strong>What?</strong>:- Global platform by Microsoft to encourage women in the field of technology, two day long session with ideathon, tech talks and teamwork.<br>
+                <strong>Perks</strong>:- Internship Offers for the best performers + Mentorship offers for all.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Microsoft<br><i class="fas fa-calendar-alt"></i> February</small></p>
+          </div>
+          </a>
+        </div>
+
+        <div class="card ug">
+          <a href="https://womenoftheworld.mettl.com">
+          <img class="card-img-top" src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/8/28/w900X450/ap_-_be_funkdy_1.jpg" alt="Amazon WOW">
+            <div class="card-body">
+              <h5 class="card-title">Amazon WOW</h5>
+              <p class="card-text">
+                <strong>What?</strong>:- Diversity hiring for only SDE I roles, through online coding test, several rounds of technical interviews and HR interview round.<br>
+                <strong>Perks</strong>:- SDE I Internship Offers amd Full-time fresher Offers for successful candidates.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Amazon<br><i class="fas fa-calendar-alt"></i> January</small></p>
+          </div>
+          </a>
+        </div>
+
+        <div class="card ug">
+          <a href="https://assessment.hackerearth.com/challenges/hiring/bny-mellon-code-divas/">
+          <img class="card-img-top" src="https://he-s3.s3.amazonaws.com/media/cache/36/43/364371048ccaca23bfeb2221941bf259.png" alt="Amazon WOW">
+            <div class="card-body">
+              <h5 class="card-title">Code Divas Diversity Challenge</h5>
+              <p class="card-text">
+                <strong>What?</strong>:- Diversity hiring for software engineering roles at the BNY Mellon Bank, coding challenge at Hackerearth for drawing the leaderboard.<br>
+                <strong>Perks</strong>:- Full time & Summer Internship Opportunities + Exciting prizes for Top 3 winners!
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> BNY Mellon<br><i class="fas fa-calendar-alt"></i> February</small></p>
+          </div>
+          </a>
+        </div>
+
+        <div class="card school">
+          <a href="https://www.microsoft.com/en-us/diversity/programs/digigirlz/default.aspx">
+          <img class="card-img-top" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE239BI?ver=dfb3&q=90&m=6&h=328&w=582&b=%23FFFFFFFF&l=f&o=t&x=1059&y=467&aim=true" alt="DigiGirlz">
+            <div class="card-body">
+              <h5 class="card-title">DigiGirlz</h5>
+              <p class="card-text">
+                <strong>What?</strong>:- Programs to give Middle School/ Junior School and High School/ Secondary School (Ages 14-18) girls opportunities to learn about careers in technology, connect with Microsoft employees and participate in hands-on computer and technology workshops.<br>
+                <strong>Perks</strong>:- Career planning assistance + information about technology and business roles + thought-provoking exercises + Microsoft product demonstrations + Developing cutting-edge technology.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> Microsoft<br><i class="fas fa-calendar-alt"></i> Varying (check <a href="https://digigirlzevents.microsoftcrmportals.com/home">here</a>)</small></p>
+          </div>
+          </a>
+        </div>
+
+        <div class="card school">
+          <a href="https://www.ibm.org/initiatives/stemforgirls">
+          <img class="card-img-top" src="https://i.ytimg.com/vi/YdmUET2bM_0/maxresdefault.jpg" alt="Stem For Girls">
+            <div class="card-body">
+              <h5 class="card-title">Stem For Girls</h5>
+              <p class="card-text">
+                <strong>What?</strong>:- Initiative by IBM in India to improve education and career pathways for girls in middle and higher secondary schools in India to focus on computing skills, STEM learning, and gender empowerment.<br>
+                <strong>Perks</strong>:- Teaching technical skills + Career planning + Life skills + Ecosystem enablement
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="far fa-user"></i> IBM<br><i class="fas fa-calendar-alt"></i> Varying (check official page)</small></p>
+          </div>
+          </a>
+        </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<%- include('partials/footer') %>
+
+
+<script type="text/javascript">
+/* Search bar */
+  const searchButton = document.getElementById('search-button');
+  const searchInput = document.getElementById('search-input');
+  searchButton.addEventListener('click', () => {
+    const inputValue = searchInput.value;
+    alert(inputValue);
+  });
+
+</script>
