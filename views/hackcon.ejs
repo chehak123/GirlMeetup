@@ -2,7 +2,37 @@
 
 <%- include('partials/modal_form') %>
 
-<%- include('partials/header-all.ejs') %>
+<!--<%- include('partials/header-all.ejs') %>-->
+
+<style>
+  .heads {
+background: url();
+text-align: center;
+width: 100%;
+height: auto;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+overflow: hidden;
+border-radius: -1 0 85% 85% / 92%;
+}
+.overlay{
+width: 100%;
+height: 50%;
+color: #FFF;
+text-shadow: 1px 1px 1px black;
+background-image:linear-gradient(to right,  rgba(66, 65, 65, 0.73), rgba(163, 163, 163, 0.73)),
+  url("https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVudG9yc2hpcHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+background-position: 50% 60%;
+}
+</style>
+
+
+<div  class="heads overlay" style="background-color: rgb(243, 243, 243); padding: 10px; margin-top: 65px;">
+  <h2 style="padding: 80px; font-family: 'Sarina', cursive;">We are here for you</h2>
+  <p style="font-size: 25px;margin-top: -71px;text-align: center; font-family: 'Sarina', cursive;">Let's go do it!</p>
+ 
+</div>
 
 <!-- ======= Toast UI ====== -->
 <%- include('partials/toast') %>
