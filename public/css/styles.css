@@ -1301,7 +1301,7 @@ html {
 }
 
 .input-group .form-outline {
-  margin: 9% 0 0 8%;
+  margin: 5% 0 0 8%;
   width: 40%;
 }
 
@@ -1310,10 +1310,15 @@ html {
   .input-group .form-outline {
     width: 70%;
   }
+
+  .card {
+    display: block;
+    width: 90%;
+  }
 }
 
 #search-button {
-  margin: 9% auto 0 8px;
+  margin: 5% auto 0 8px;
 }
 
 .card .card-title {
