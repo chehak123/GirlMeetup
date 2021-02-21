@@ -118,9 +118,9 @@ app.get("/blog", (req, res) => {
   res.render("blog",{currentUser: req.user});
 });
 
-app.get("/opportunities", (req, res) => {
-  res.render("opportunities",{currentUser: req.user});
-});
+// app.get("/opportunities", (req, res) => {
+//   res.render("opportunities",{currentUser: req.user});
+// });
 
 app.get("/scholarships", (req, res) => {
   res.render("scholarships",{currentUser: req.user});
