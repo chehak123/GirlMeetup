@@ -79,12 +79,12 @@ app.post("/register", (req, res) => {
       }
       passport.authenticate("local")(req, res, function () {
         console.log(req.baseUrl);
-        res.redirect("/" + "#login_new_user");
+        res.redirect("/");
       });
     }
   );
 
-  res.render("index");
+  
 
 });
 
